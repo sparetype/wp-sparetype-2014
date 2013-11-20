@@ -1,0 +1,2 @@
+# ignore Codio Sass compiler output
+*.sass-cache
