@@ -1,2 +1,3 @@
-# ignore Codio Sass compiler output
-*.sass-cache
+# ignore Codio settings and Sass compiler
+.sass-cache
+.settings

@@ -14,3 +14,5 @@ and a new developement environment with Codio. All while trying to build a new W
 - Copy over current theme's file structure
 - Evaluate file structure and make changes
 - Test deployment from Codio
+- Evaluate daily development process from start to finish
+- GO/NO GO for design
