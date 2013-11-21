@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div id="content" class="grid" role="main">
 
-
+    
 <?php if ( have_posts() ) : ?>
 
 <?php /* Start the Loop */ ?>
