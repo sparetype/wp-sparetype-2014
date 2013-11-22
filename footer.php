@@ -17,9 +17,6 @@
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript">
-    var s = skrollr.init();
-    </script>
 
 </body>
 </html>
