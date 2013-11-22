@@ -1,4 +1,4 @@
-/*
+/!*
 Theme Name: SpareType2014
 Theme URI: http://www.sparetype.com
 Author: SpareType - Griffin Shreves, III
@@ -58,23 +58,13 @@ body {
 
 }
 
-#navigation {
+.home-logo { height: 72px; border: none; }
 
-text-align:center;
-
-}
-
-#title {
-
-margin:0;
-
-}
+.homepage-content { padding: 296px 15% 0 28%;}
 
 #searchform {
 
   border: 7px solid #000000;
-
-  margin: 10px auto;
 
   max-width: 260px;
 
@@ -477,16 +467,9 @@ a:hover {
 
 }
 
-#navigation #title a:link {
-
-  border: medium none;
-
-}
-
 #navigation a:link {
-
 	color: #000000;
-
+    border: none;
 }
 
 #navigation a:visited {
@@ -928,8 +911,6 @@ a.menu-trigger {
 
   font-weight: 700;
 
-  margin: 5px auto;
-
   padding: 9px 17px;
 
   text-transform: uppercase;
@@ -1231,16 +1212,19 @@ footer.main {
 }
 
 #jPanelMenu-menu li a {
-  border: 8px solid #FFFFFF;
+  border: 7px solid #FFFFFF;
   color: #F7F7F7;
   display: block;
   font-weight: 600;
+  height: 72px;
   letter-spacing: 0.05rem;
-  margin: 1rem 7%;
-  padding: 0.5rem 7%;
+  margin: 18px 14%;
+  padding: 9px 17px;
   text-decoration: none;
   text-transform: uppercase;
 }
+
+#jPanelMenu-menu li:first-child a { margin: 32px 14% 18px; }
 
 #jPanelMenu-menu li a:hover, #jPanelMenu-menu li a:focus {
 
@@ -1343,45 +1327,9 @@ html {
 
 }
 
-#navigation {
 
-	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
-
-	border-bottom: 8px solid #000000;
-
-	padding: 2%;
-
-	position: fixed;
-
-	text-transform: uppercase;
-
-	width: 100%;
-
-}
-
-#title {
-
-	display: inline;
-
-	margin: 0;
-
-	text-align: center;
-
-}
-
-a.menu-trigger {
-
-  float: left;
-
-  margin: 0;
-
-}
 
 #searchform {
-
-	float: right;
-
-	margin: 0;
 
 	text-align: right;
 

@@ -24,7 +24,7 @@
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-<?php wp_enqueue_script( 'jpanelmenu', get_template_directory_uri().'/scriptss/jquery.jpanelmenu.min.js', array('jquery'), '1.30', true ); ?>
+<?php wp_enqueue_script( 'jpanelmenu', get_template_directory_uri().'/scripts/jquery.jpanelmenu.min.js', array('jquery'), '1.30', true ); ?>
 <?php wp_enqueue_script( 'skrollr', get_template_directory_uri().'/scripts/skrollr.min.js', array(), '0.6.17', true ); ?>
 
     
@@ -33,22 +33,18 @@
 
 
 </head>
-
-
-<body <?php body_class('wrap wider'); ?>>
-
-
-<?php wp_nav_menu( array('theme_location' => 'primary-navigation', 'container' => false, 'menu_id' => 'menu', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>' )); ?>
-<div id="logo" data-500="top:-10%;transform:rotate(0deg);" data-0="top:3%;transform:rotate(-20deg);transform-origin:0 0;">
-
     
+<body <?php body_class('wrap wider'); ?>>
+    
+<?php wp_nav_menu( array('theme_location' => 'primary-navigation', 'container' => false, 'menu_id' => 'menu', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>' )); ?>
+
 <div id="navigation" role="navigation">
 
-<h1 id="title"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/st_sparetype_logo.svg" /></a></h1>
+    <a data-300="position:absolute;margin-top:18px;left:2%;margin-left:0px;display:block;transform:rotate(0deg);" data-0="position:absolute;margin-top:128px;left:50%;margin-left:-130px;display:block;transform:rotate(-13deg);" href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php bloginfo('template_directory'); ?>/images/st_sparetype_logo.svg" /></a>
 
-<a href="#" class="menu-trigger">&#9776; menu</a>
+    <a data-300="position:absolute;margin-top:108px;left:2%;display:block;" data-0="position:absolute;margin-top:126px;left:-60%;display:block;" href="#" class="menu-trigger">&#9776; menu</a>
 
-<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+<form data-300="position:absolute;margin-top:198px;left:2%;display:block;" data-0="position:absolute;margin-top:4000px;left:2%;display:block;" role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 
 <input class="textbox" value="Search" name="s" id="s" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" type="text">
 
