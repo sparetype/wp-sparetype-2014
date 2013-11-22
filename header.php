@@ -24,8 +24,10 @@
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-<?php wp_enqueue_script( 'jpanelmenu', get_template_directory_uri().'/scripts/jquery.jpanelmenu.min.js', array('jquery'), '1.30', true ); ?>
+<?php wp_enqueue_script( 'jpanelmenu', get_template_directory_uri().'/scriptss/jquery.jpanelmenu.min.js', array('jquery'), '1.30', true ); ?>
+<?php wp_enqueue_script( 'skrollr', get_template_directory_uri().'/scripts/skrollr.min.js', array(), '0.6.17', true ); ?>
 
+    
 
 <?php wp_head(); ?>
 
@@ -37,6 +39,7 @@
 
 
 <?php wp_nav_menu( array('theme_location' => 'primary-navigation', 'container' => false, 'menu_id' => 'menu', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>' )); ?>
+<div id="logo" data-500="top:-10%;transform:rotate(0deg);" data-0="top:3%;transform:rotate(-20deg);transform-origin:0 0;">
 
     
 <div id="navigation" role="navigation">
