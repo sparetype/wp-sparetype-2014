@@ -1,81 +1,53 @@
 /*
-
  * Gridism - A simple, responsive, and handy CSS grid by @cobyism
-
  * https://github.com/cobyism/gridism
-
  */
-
 
 
 /* Set up some rules to govern the grid */
 
 .grid {
-
   display: block;
-
   clear: both;
-
 }
 
 .grid .unit {
-
   float: left;
-
   width: 100%;
-
   transition: all 0.25s ease-in-out 0s;
-
   padding: 25px;
-
 }
-
 
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
 
 .grid .unit:first-child { padding-left: 50px; }
-
 .grid .unit:last-child { padding-right: 50px; }
-
 
 
 /* Nested grids already have padding though, so let’s nuke it */
 
 .unit .unit:first-child { padding-left: 0; }
-
 .unit .unit:last-child { padding-right: 0; }
-
 .unit .grid:first-child > .unit { padding-top: 0; }
-
 .unit .grid:last-child > .unit { padding-bottom: 0; }
-
 
 
 /* Let people nuke the gutters/padding completely in a couple of ways */
 
 .no-gutters .unit,
-
 .unit.no-gutters {
-
   padding: 0 !important;
-
 }
-
 
 
 /* Wrapping at a maximum width is optional */
 
 .wrap .grid,
-
 .grid.wrap {
-
   max-width: 978px;
-
   margin: 0 auto;
-
 }
-
 
 
 /* Width classes also have shorthand versions numbered as fractions */
@@ -105,33 +77,19 @@
 .grid .golden-large,   .grid .w-g-l { width: 61.7283%; } /* Golden section: larger piece */
 
 
-
-
-
 /* Clearfix after every .grid */
 
-.grid, .clearfix {
-
-  *zoom: 1;
-
-}
+.grid, .clearfix { *zoom: 1; }
 
 .grid:before, .grid:after, .clearfix:before, .clearfix:after {
-
   display: table;
-
   content: "";
-
   line-height: 0;
-
 }
 
 .grid:after, .clearfix:after {
-
   clear: both;
-
 }
-
 
 
 /* Responsive Stuff */

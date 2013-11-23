@@ -172,7 +172,7 @@ function sparetype_recent_posts_shortcode( $atts ) {
 
 	while ( $q->have_posts() ) {
 		$q->the_post();
-		$list .= '<div class="unit one-third">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
+		$list .= '<div class="unit whole">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
 	}
 
 	wp_reset_query();
@@ -197,7 +197,7 @@ function sparetype_recent_projects_shortcode( $atts ) {
 
 	while ( $q->have_posts() ) {
 		$q->the_post();
-		$list .= '<div class="unit one-third">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
+		$list .= '<div class="unit whole">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
 	}
 
 	wp_reset_query();
