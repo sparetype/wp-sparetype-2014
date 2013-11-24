@@ -169,6 +169,12 @@ html {
 #searchform .textbox {
   width: 75%; }
 
+.homepage-content {
+  margin: 8% auto;
+  max-width: 800px;
+  width: 75%;
+}
+
 body.blog #content {
   max-width: 720px; }
 
@@ -198,8 +204,8 @@ Secondary Text: 17px
 html {
   color: #3C4D56;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.235rem;
-  line-height: 1.7rem; }
+  font-size: 1.375rem;
+  line-height: 1.75rem; }
 
 h5 {
   margin: 0; }
@@ -588,11 +594,6 @@ a.page-numbers, span.page-numbers {
 }
 
 @media screen and (min-width: 1025px) {
-  html {
-    font-size: 1.375rem;
-    line-height: 1.75rem; }
-
-.homepage-content { }
 
   #searchform {
     text-align: right; }
