@@ -17,17 +17,5 @@
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript">
-
-    jQuery(function(){
-     jQuery(window).resize(function(){
-         if(jQuery(this).width() >= 1025){
-             var s = skrollr.init();
-         }
-      })
-      .resize();//trigger resize on page load
-});
-</script>
-
 </body>
 </html>
