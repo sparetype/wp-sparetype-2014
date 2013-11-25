@@ -235,14 +235,16 @@ a:link {
   border-bottom: 1px dotted;
   color: #3C4D56;
   padding-bottom: 1px;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:visited {
-  color: #9CA5A9; }
+  color: #9CA5A9;
+}
 
 a:hover {
-  color: #FEC34D; }
-
+  color: #FEC34D;
+}
 .entry-title > a {
   border: medium none; }
 
@@ -376,10 +378,13 @@ a.menu-trigger {
   font-weight: 700;
   padding: 9px 17px;
   text-transform: uppercase;
-  width: 260px; }
+  width: 260px;
+transition: all 1s
+}
 
 a.menu-trigger:hover {
       border-color: #FEC34D;
+    transition: all 1s
 }
 
 a.menu-trigger:focus {

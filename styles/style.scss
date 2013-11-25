@@ -167,10 +167,10 @@ a:link {
 a:active {
 }
 a:visited {
-	color: #555555;
+	color: #555555
 }
 a:hover {
-	color: #111111;
+	color: #111111
 }
 .entry-title > a {
 	border: medium none;
@@ -423,6 +423,7 @@ a.menu-trigger {
 
 a.menu-trigger:hover {
       border-color: $brand-color3;
+    transition: all 2s
 }
 
 a.menu-trigger:focus {
