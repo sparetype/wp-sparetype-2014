@@ -163,6 +163,7 @@ a:link {
 	color: #555555;
 	padding-bottom: 1px;
 	text-decoration: none;
+    transition: all 0.4s
 }
 a:active {
 }
@@ -419,11 +420,11 @@ a.menu-trigger {
 	padding: 9px 17px;
 	text-transform: uppercase;
 	width: 260px;
+    transition: all 0.4s
 }
 
 a.menu-trigger:hover {
       border-color: $brand-color3;
-    transition: all 2s
 }
 
 a.menu-trigger:focus {

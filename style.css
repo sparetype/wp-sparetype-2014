@@ -236,6 +236,7 @@ a:link {
   color: #3C4D56;
   padding-bottom: 1px;
   text-decoration: none;
+    transition: all 0.4s
 }
 
 a:visited {
@@ -379,12 +380,11 @@ a.menu-trigger {
   padding: 9px 17px;
   text-transform: uppercase;
   width: 260px;
-transition: all 1s
+transition: all 0.4s
 }
 
 a.menu-trigger:hover {
       border-color: #FEC34D;
-    transition: all 1s
 }
 
 a.menu-trigger:focus {
