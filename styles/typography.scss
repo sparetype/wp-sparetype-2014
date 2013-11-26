@@ -91,4 +91,10 @@ a:hover {
 	border: medium none;
 }
 
-.home-logo:link { border:none; }
+.home-logo:link {
+  border: medium none;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+}
