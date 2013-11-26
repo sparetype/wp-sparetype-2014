@@ -190,10 +190,16 @@ a.page-numbers, span.page-numbers {
 
 #navigation > li {
   background: none repeat scroll 0 0 #FFFFFF;
+  margin: 0;
 }
 
 #navigation li:nth-child(2) {
   order: -1;
+}
+
+.homepage-content {
+  margin: 180px auto;
+  max-width: 500px;
 }
 
 }

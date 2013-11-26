@@ -21,6 +21,10 @@ body {
   padding: 0;
 }
 
+#navigation > li {
+  margin: 0 0 18px;
+}
+
 #searchform {
 	border: 7px solid $brand-color1;
 	padding: 9px 17px;
@@ -30,8 +34,7 @@ body {
 }
 
 .homepage-content {
-  margin: 8% auto;
-  max-width: 800px;
+  margin: 36px auto;
   width: 75%;
 }
 

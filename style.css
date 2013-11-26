@@ -168,6 +168,9 @@ html {
   max-width: 260px;
   padding: 0; }
 
+#navigation > li {
+  margin: 0 0 18px; }
+
 #searchform {
   border: 7px solid #3c4d56;
   padding: 9px 17px; }
@@ -176,8 +179,7 @@ html {
   width: 75%; }
 
 .homepage-content {
-  margin: 8% auto;
-  max-width: 800px;
+  margin: 36px auto;
   width: 75%; }
 
 body.blog #content {
@@ -251,7 +253,11 @@ a:hover {
   border: medium none; }
 
 .home-logo:link {
-  border: none; }
+  border: medium none;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  padding: 0; }
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -543,13 +549,13 @@ a img.aligncenter {
   text-align: center; }
 
 a.page-numbers, span.page-numbers {
-  border: 2px solid #AAAAAA;
+  border: 2px solid #9ca5a9;
   font-size: 1.25rem;
   margin: 0.5%;
   padding: 0.85% 1.5%; }
 
 .page-numbers.current {
-  background: none repeat scroll 0 0 #AAAAAA;
+  background: none repeat scroll 0 0 #9ca5a9;
   color: #FFFFFF; }
 
 /* Responsive ---------------------------- */
@@ -564,10 +570,14 @@ a.page-numbers, span.page-numbers {
 
   #navigation > li {
     background: none repeat scroll 0 0 #FFFFFF;
-    height: 72px; }
+    margin: 0; }
 
   #navigation li:nth-child(2) {
-    order: -1; } }
+    order: -1; }
+
+  .homepage-content {
+    margin: 180px auto;
+    max-width: 500px; } }
 @media screen and (min-width: 1025px) {
   #searchform {
     text-align: right; }
