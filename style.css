@@ -9,7 +9,6 @@ License: GNU General Public License
 License URI: license.txt
 Tags: one-column, custom-menu, editor-style, featured-images, post-formats, sticky-post
 */
-
 @import url("//cdn.jsdelivr.net/normalize/2.1.0/normalize.css");
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
 
@@ -31,13 +30,13 @@ Tags: one-column, custom-menu, editor-style, featured-images, post-formats, stic
 /* Set up some rules to govern the grid */
 .grid {
   display: block;
-  clear: both; }
-
+  clear: both;
+}
 .grid .unit {
   float: left;
   width: 100%;
-  transition: all 0.25s ease-in-out 0s;
-  padding: 25px; }
+  padding: 10px;
+}
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
 .grid .unit:first-child {
@@ -178,7 +177,7 @@ html {
 #searchform .textbox {
   width: 75%; }
 
-.homepage-content {
+.homepage-intro {
   margin: 36px auto;
   width: 75%; }
 
@@ -575,7 +574,7 @@ a.page-numbers, span.page-numbers {
   #navigation li:nth-child(2) {
     order: -1; }
 
-  .homepage-content {
+  .homepage-intro {
     margin: 180px auto;
     max-width: 500px; } }
 @media screen and (min-width: 1025px) {

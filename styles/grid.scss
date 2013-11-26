@@ -5,17 +5,14 @@
 
 
 /* Set up some rules to govern the grid */
-
 .grid {
   display: block;
   clear: both;
 }
-
 .grid .unit {
   float: left;
   width: 100%;
-  transition: all 0.25s ease-in-out 0s;
-  padding: 25px;
+  padding: 10px;
 }
 
 
