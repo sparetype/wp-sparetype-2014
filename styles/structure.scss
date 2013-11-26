@@ -1,0 +1,50 @@
+/* =Structure
+-------------------------------------------------------------- */
+* {
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+}
+#navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none outside none;
+  margin: 0 auto;
+  max-width: 260px;
+  padding: 0;
+}
+
+#searchform {
+	border: 7px solid $brand-color1;
+	padding: 9px 17px;
+}
+#searchform .textbox {
+	width: 75%;
+}
+
+.homepage-content {
+  margin: 8% auto;
+  max-width: 800px;
+  width: 75%;
+}
+
+body.blog #content {
+	max-width: 720px;
+}
+#footer {
+}
+article {
+	margin: 2rem 0;
+	padding: 1rem 0;
+}
+.clear {
+	clear: both;
+	display: block;
+}

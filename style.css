@@ -22,7 +22,7 @@ Tags: one-column, custom-menu, editor-style, featured-images, post-formats, stic
 -------------------------------------------------------------- */
 /* =fontface setup
 -------------------------------------------------------------- */
-/* = Gridism - responsive CSS grid by @cobyism
+/* =Gridism - responsive CSS grid by @cobyism
 -------------------------------------------------------------- */
 /*
  * Gridism - A simple, responsive, and handy CSS grid by @cobyism
@@ -148,6 +148,8 @@ Tags: one-column, custom-menu, editor-style, featured-images, post-formats, stic
     margin: 0 auto; } }
 /* =Structure
 -------------------------------------------------------------- */
+/* =Structure
+-------------------------------------------------------------- */
 * {
   box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -189,6 +191,8 @@ article {
   clear: both;
   display: block; }
 
+/* =Typography and Links
+-------------------------------------------------------------- */
 /* =Typography
 -------------------------------------------------------------- */
 /*
@@ -229,102 +233,29 @@ footer.entry-meta p {
   text-transform: lowercase; }
 
 /* =Links
-
 -------------------------------------------------------------- */
 a:link {
   border-bottom: 1px dotted;
-  color: #3C4D56;
+  color: #3c4d56;
   padding-bottom: 1px;
   text-decoration: none;
-    transition: all 0.4s
-}
+  transition: all 0.4s; }
 
 a:visited {
-  color: #9CA5A9;
-}
+  color: #9ca5a9; }
 
 a:hover {
-  color: #FEC34D;
-}
+  color: #fec34d; }
+
 .entry-title > a {
   border: medium none; }
 
 .home-logo:link {
   border: none; }
 
-/* =Forms and Inputs
-
--------------------------------------------------------------- */
-input[type=text], input[type=text]:hover, input[type=text]:focus, input[type=text]:active {
-  border: 0;
-  outline: none;
-  outline-offset: 0; }
-
-/* =Wordpress Core Alignments
-
--------------------------------------------------------------- */
-img {
-  max-width: 100%;
-  height: auto; }
-
-.aligncenter, div.aligncenter {
-  display: block;
-  margin: 5px auto 5px auto; }
-
-.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.alignright {
-  float: right;
-  margin: 5px 0 20px 20px; }
-
-a img.alignleft {
-  float: left;
-  margin: 5px 20px 20px 0; }
-
-a img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.wp-caption {
-  background: #fff;
-  border: 1px solid #f0f0f0;
-  max-width: 96%;
-  /* Image does not overflow the content area */
-  padding: 5px 3px 10px;
-  text-align: center; }
-
-.wp-caption.alignnone {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignleft {
-  margin: 5px 20px 20px 0; }
-
-.wp-caption.alignright {
-  margin: 5px 0 20px 20px; }
-
-.wp-caption img {
-  border: 0 none;
-  height: auto;
-  margin: 0;
-  max-width: 98.5%;
-  padding: 0;
-  width: auto; }
-
 /* =Comments
-
-
-
-
-
-
-
+-------------------------------------------------------------- */
+/* =Comments
 -------------------------------------------------------------- */
 ol.commentlist {
   list-style: none;
@@ -359,15 +290,9 @@ ol.commentlist li.even {
 ol.commentlist li.odd {
   background: #f6f6f6; }
 
-/* =Post Formats
-
-
-
+/* =jPanelMenu
 -------------------------------------------------------------- */
 /* =jPanel
-
-
-
 -------------------------------------------------------------- */
 #menu {
   display: none; }
@@ -380,12 +305,10 @@ a.menu-trigger {
   padding: 9px 17px;
   text-transform: uppercase;
   width: 260px;
-transition: all 0.4s
-}
+  transition: all 0.4s; }
 
 a.menu-trigger:hover {
-      border-color: #FEC34D;
-}
+  border-color: #fec34d; }
 
 a.menu-trigger:focus {
   outline: none; }
@@ -404,8 +327,7 @@ a.menu-trigger:focus {
   z-index: -1;
   padding: 36px 0;
   margin: 0;
-  background: #3C4D56;
-}
+  background: #3C4D56; }
 
 .jPanelMenu-panel {
   background: none repeat scroll 0 0 #F4F0EB;
@@ -544,14 +466,77 @@ footer.main {
 
 #jPanelMenu-menu li a:hover, #jPanelMenu-menu li a:focus {
   border: 7px solid #FEC34D;
-  color: #FEC34D;
-}
+  color: #FEC34D; }
 
 #jPanelMenu-menu li a:active {
   box-shadow: 3px 4px 9px #222222 inset;
-  text-shadow: 1px 2px 3px #222222;
-}
+  text-shadow: 1px 2px 3px #222222; }
 
+/* =Forms and Inputs
+-------------------------------------------------------------- */
+input[type=text], input[type=text]:hover, input[type=text]:focus, input[type=text]:active {
+  border: 0;
+  outline: none;
+  outline-offset: 0; }
+
+/* =Wordpress Core Alignments
+-------------------------------------------------------------- */
+img {
+  max-width: 100%;
+  height: auto; }
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+/* =Post Formats
+-------------------------------------------------------------- */
 /* Blog post pagination ---------------------------- */
 #pagination {
   margin: 6rem 0 4rem;
@@ -570,24 +555,19 @@ a.page-numbers, span.page-numbers {
 /* Responsive ---------------------------- */
 @media screen and (min-width: 850px) {
   #navigation {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
-  flex-direction: row;
-  max-width: none;
-  padding: 18px 0;
-  position: fixed;
-  width: 100%;
-}
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
+    flex-direction: row;
+    max-width: none;
+    padding: 18px 0;
+    position: fixed;
+    width: 100%; }
 
-#navigation > li {
-  background: none repeat scroll 0 0 #FFFFFF;
-  height: 72px;
-}
+  #navigation > li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 72px; }
 
-#navigation li:nth-child(2) {
-  order: -1;
-}
-}
-
+  #navigation li:nth-child(2) {
+    order: -1; } }
 @media screen and (min-width: 1025px) {
   #searchform {
     text-align: right; }

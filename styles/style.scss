@@ -28,174 +28,42 @@ $brand-color3: #FEC34D; /* Yellow-orange */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
 
 
-/* = Gridism - responsive CSS grid by @cobyism
+/* =Gridism - responsive CSS grid by @cobyism
 -------------------------------------------------------------- */
 @import "grid";
 
 
 /* =Structure
 -------------------------------------------------------------- */
-* {
-	box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-html {
-	overflow-y: scroll;
-}
-body {
-}
-#navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  list-style: none outside none;
-  margin: 0 auto;
-  max-width: 260px;
-  padding: 0;
-}
-
-#searchform {
-	border: 7px solid $brand-color1;
-	padding: 9px 17px;
-}
-#searchform .textbox {
-	width: 75%;
-}
-
-.homepage-content {
-  margin: 8% auto;
-  max-width: 800px;
-  width: 75%;
-}
-
-body.blog #content {
-	max-width: 720px;
-}
-#footer {
-}
-article {
-	margin: 2rem 0;
-	padding: 1rem 0;
-}
-.clear {
-	clear: both;
-	display: block;
-}
+@import "structure";
 
 
-
-/* =Typography
+/* =Typography and Links
 -------------------------------------------------------------- */
-
-/*
-
-Title: 58px
-
-Headlines: 36px
-
-Sub-headlines: 28px
-
-Primary Text: 22px
-
-Secondary Text: 17px
-
-*/
+@import "typography";
 
 
-html {
-	color: $brand-color1;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.375rem;
-  line-height: 1.75rem;
-}
-body {
-}
-h1, h2, h3, h4, h5, h6 {
-}
-h1 {
-}
-h2 {
-}
-h3 {
-}
-h4 {
-}
-h5 {
-	margin: 0;
-}
-h6 {
-}
-p {
-	margin: 0 0 1.25rem;
-}
-strong {
-}
-em {
-}
-#navigation {
-}
-#content {
-}
-#footer {
-}
-.date_posted {
-	font-size: 0.75rem;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-footer.entry-meta p {
-	margin: 0;
-	font-size: 0.8rem;
-	font-weight: 600;
-	line-height: 1.4rem;
-	text-transform: lowercase;
-}
-/* =Links
-
+/* =Comments
 -------------------------------------------------------------- */
+@import "comments";
 
 
-
-a:link {
-	border-bottom: 1px dotted;
-	color: #555555;
-	padding-bottom: 1px;
-	text-decoration: none;
-    transition: all 0.4s
-}
-a:active {
-}
-a:visited {
-	color: #555555
-}
-a:hover {
-	color: #111111
-}
-.entry-title > a {
-	border: medium none;
-}
-
-.home-logo:link { border:none; }
+/* =jPanelMenu
+-------------------------------------------------------------- */
+@import "jpanel";
 
 
 /* =Forms and Inputs
-
 -------------------------------------------------------------- */
-
-
-
 input[type=text], input[type=text]:hover, input[type=text]:focus, input[type=text]:active {
 	border: 0;
 	outline: none;
 	outline-offset: 0;
 }
+
+
 /* =Wordpress Core Alignments
-
 -------------------------------------------------------------- */
-
-
 
 img {
 	max-width: 100%;
@@ -260,128 +128,11 @@ a img.aligncenter {
 }
 .gallery-caption {
 }
-/* =Comments
 
 
 
-
-
-
-
--------------------------------------------------------------- */
-
-
-
-
-
-
-
-ol.commentlist {
-	list-style: none;
-	margin: 0 0 1em;
-	padding: 0;
-	text-indent: 0;
-}
-ol.commentlist li {
-}
-ol.commentlist li.alt {
-}
-ol.commentlist li.bypostauthor {
-}
-ol.commentlist li.byuser {
-}
-ol.commentlist li.comment-author-admin {
-}
-ol.commentlist li.comment {
-	padding: 1em;
-}
-ol.commentlist li.comment div.comment-author {
-}
-ol.commentlist li.comment div.vcard {
-}
-ol.commentlist li.comment div.vcard cite.fn {
-}
-ol.commentlist li.comment div.vcard cite.fn a.url {
-}
-ol.commentlist li.comment div.vcard img.avatar {
-}
-ol.commentlist li.comment div.vcard img.avatar-32 {
-}
-ol.commentlist li.comment div.vcard img.photo {
-}
-ol.commentlist li.comment div.vcard span.says {
-}
-ol.commentlist li.comment div.commentmetadata {
-}
-ol.commentlist li.comment div.comment-meta {
-}
-ol.commentlist li.comment div.comment-meta a {
-}
-ol.commentlist li.comment p {
-}
-ol.commentlist li.comment ul {
-	list-style: square;
-	margin: 0 0 1em 2em;
-}
-ol.commentlist li.comment div.reply {
-}
-ol.commentlist li.comment div.reply a {
-}
-ol.commentlist li.comment ul.children {
-	list-style: none;
-	margin: 1em 0 0;
-	text-indent: 0;
-}
-ol.commentlist li.comment ul.children li {
-}
-ol.commentlist li.comment ul.children li.alt {
-}
-ol.commentlist li.comment ul.children li.bypostauthor {
-}
-ol.commentlist li.comment ul.children li.byuser {
-}
-ol.commentlist li.comment ul.children li.comment {
-}
-ol.commentlist li.comment ul.children li.comment-author-admin {
-}
-ol.commentlist li.comment ul.children li.depth-2 {
-	margin: 0 0 .25em .25em;
-}
-ol.commentlist li.comment ul.children li.depth-3 {
-	margin: 0 0 .25em .25em;
-}
-ol.commentlist li.comment ul.children li.depth-4 {
-	margin: 0 0 .25em .25em;
-}
-ol.commentlist li.comment ul.children li.depth-5 {
-}
-ol.commentlist li.comment ul.children li.odd {
-}
-ol.commentlist li.even {
-	background: #fff;
-}
-ol.commentlist li.odd {
-	background: #f6f6f6;
-}
-ol.commentlist li.parent {
-}
-ol.commentlist li.thread-alt {
-}
-ol.commentlist li.thread-even {
-}
-ol.commentlist li.thread-odd {
-}
 /* =Post Formats
-
-
-
 -------------------------------------------------------------- */
-
-
-
-
-
-
 
 .format-aside {
 }
@@ -401,197 +152,7 @@ ol.commentlist li.thread-odd {
 }
 .format-audio {
 }
-/* =jPanel
 
-
-
--------------------------------------------------------------- */
-
-
-
-#menu {
-	display: none;
-}
-a.menu-trigger {
-	border: 7px solid $brand-color1;
-	display: block;
-	font-size: 1.5rem;
-	font-weight: 700;
-	padding: 9px 17px;
-	text-transform: uppercase;
-	width: 260px;
-    transition: all 0.4s
-}
-
-a.menu-trigger:hover {
-      border-color: $brand-color3;
-}
-
-a.menu-trigger:focus {
-	outline: none;
-}
-body[data-menu-position="open"] .menu-trigger {
-}
-.jPanelMenu, body {
-	overflow-x: hidden;
-}
-#jPanelMenu-menu {
-	display: block;
-	height: 100%;
-	left: 0;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: fixed;
-	top: 0;
-	z-index: -1;
-	padding: 36px 0;
-	margin: 0;
-    background: #3C4D56;
-}
-.jPanelMenu-panel {
-	background: none repeat scroll 0 0 #F4F0EB;
-	left: 0;
-	min-height: 100%;
-	position: static;
-	top: 0;
-	width: 100%;
-	z-index: 2;
-	padding: 18px 0;
-}
-.jPM-specific {
-	display: none
-}
-#trigger-on {
-	background: #3684ab;
-	background: -o-linear-gradient(top, #3f94bf, #2d7498);
-	background: -ms-linear-gradient(top, #3f94bf, #2d7498);
-	background: -moz-linear-gradient(top, #3f94bf, #2d7498);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3f94bf), color-stop(1, #2d7498));
-	background: -webkit-linear-gradient(#3f94bf, #2d7498);
-	background: linear-gradient(top, #3f94bf, #2d7498);
-	-moz-box-shadow: 0 1px 10px #222;
-	-webkit-box-shadow: 0 1px 10px #222;
-	box-shadow: 0 1px 10px #222;
-	display: block;
-	position: fixed;
-	top: 0;
-	right: 7.5%;
-	padding: 0.25em 1em;
-	-moz-border-radius-bottomright: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	-moz-border-radius-bottomleft: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border: 1px solid #1b5572;
-	border-top: none;
-	text-decoration: none;
-	text-shadow: 0 -1px 1px #222;
-	color: #f7f7f7
-}
-footer.main {
-	margin-bottom: 0;
-	padding-bottom: 1em;
-	text-align: center
-}
-.jPanelMenu header.main {
-	background: #317ca2;
-	background: -o-linear-gradient(top, #3f94bf, #246485);
-	background: -ms-linear-gradient(top, #3f94bf, #246485);
-	background: -moz-linear-gradient(top, #3f94bf, #246485);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3f94bf), color-stop(1, #246485));
-	background: -webkit-linear-gradient(#3f94bf, #246485);
-	background: linear-gradient(top, #3f94bf, #246485);
-	-moz-box-shadow: 0 1px 5px rgba(34,34,34,0.5);
-	-webkit-box-shadow: 0 1px 5px rgba(34,34,34,0.5);
-	box-shadow: 0 1px 5px rgba(34,34,34,0.5);
-	position: fixed;
-	top: 0;
-	width: 85%;
-	max-width: none;
-	height: 50px;
-	margin: 0;
-	padding: 0 7.5%;
-	border-bottom: 1px solid #1b5572;
-	z-index: 10
-}
-.jPanelMenu header.main .logo a, .jPanelMenu header.main .menu-trigger {
-	display: block;
-	height: 100%;
-	text-shadow: 0 -1px 1px #222;
-	line-height: 50px;
-	color: #f7f7f7
-}
-.jPanelMenu header.main .logo {
-	float: none;
-	width: 60%;
-	margin: 0 auto
-}
-.jPanelMenu header.main .logo a {
-	position: static
-}
-.jPanelMenu header.main .logo a:before {
-	display: none !important
-}
-.jPanelMenu header.main .menu-trigger {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0 1.5em;
-	font-size: 1.2em;
-	line-height: 57.5px
-}
-.jPanelMenu header.main .menu-trigger:active {
-	text-shadow: 0 -1px 1px #222, 0 0 50px #f7f7f7
-}
-.jPanelMenu header.main nav {
-	text-indent: -9999px
-}
-.jPanelMenu .content {
-	padding-top: 4em
-}
-.jPanelMenu .content section.intro h2 {
-	padding-top: 0
-}
-.jPanelMenu .content h2 {
-	margin-top: 0;
-	padding-top: 62.5px
-}
-.jPanelMenu .content .spec, .jPanelMenu .content h3 {
-	margin-top: 0;
-	padding-top: 4em
-}
-.jPanelMenu .content .spec h3 {
-	padding-top: 0
-}
-.jPanelMenu .content .jPM-specific {
-	display: block
-}
-#jPanelMenu-menu ul {
-	border-bottom: 1px solid #484848;
-	list-style-type: none;
-}
-#jPanelMenu-menu li a {
-	border: 7px solid #FFFFFF;
-	color: #F7F7F7;
-	display: block;
-	font-weight: 600;
-	height: 72px;
-	letter-spacing: 0.05rem;
-	margin: 0 13% 18px;
-	padding: 9px 17px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-#jPanelMenu-menu li a:hover, #jPanelMenu-menu li a:focus {
-  border: 7px solid #FEC34D;
-  color: #FEC34D;
-}
-#jPanelMenu-menu li a:active {
-  box-shadow: 3px 4px 9px #222222 inset;
-  text-shadow: 1px 2px 3px #222222;
-}
 
 
 

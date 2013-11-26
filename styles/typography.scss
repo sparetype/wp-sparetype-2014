@@ -1,0 +1,94 @@
+
+/* =Typography
+-------------------------------------------------------------- */
+
+/*
+
+Title: 58px
+
+Headlines: 36px
+
+Sub-headlines: 28px
+
+Primary Text: 22px
+
+Secondary Text: 17px
+
+*/
+
+
+html {
+	color: $brand-color1;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.375rem;
+  line-height: 1.75rem;
+}
+body {
+}
+h1, h2, h3, h4, h5, h6 {
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+	margin: 0;
+}
+h6 {
+}
+p {
+	margin: 0 0 1.25rem;
+}
+strong {
+}
+em {
+}
+#navigation {
+}
+#content {
+}
+#footer {
+}
+.date_posted {
+	font-size: 0.75rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+footer.entry-meta p {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1.4rem;
+	text-transform: lowercase;
+}
+
+
+
+
+/* =Links
+-------------------------------------------------------------- */
+
+a:link {
+	border-bottom: 1px dotted;
+	color: $brand-color1;
+	padding-bottom: 1px;
+	text-decoration: none;
+    transition: all 0.4s
+}
+a:active {
+}
+a:visited {
+	color: $brand-color2;
+}
+a:hover {
+	color: $brand-color3;
+}
+.entry-title > a {
+	border: medium none;
+}
+
+.home-logo:link { border:none; }
