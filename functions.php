@@ -168,11 +168,11 @@ function sparetype_recent_posts_shortcode( $atts ) {
 
 	$q = new WP_Query( 'posts_per_page=' . $limit );
 
-	$list = '<h2 class="grid unit whole">Take a glance at my latest posts.</h2><div class="grid frontpage-recent-posts">';
+	$list = '<div class="grid frontpage-recent-posts"><h2 class="unit whole">Take a glance at my latest posts.</h2>';
 
 	while ( $q->have_posts() ) {
 		$q->the_post();
-		$list .= '<div class="unit whole">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
+		$list .= '<div class="unit half">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
 	}
 
 	wp_reset_query();
@@ -193,11 +193,11 @@ function sparetype_recent_projects_shortcode( $atts ) {
 
 	$q = new WP_Query( 'post_type=sparetype_project&posts_per_page=' . $limit );
 
-	$list = '<h2 class="grid unit whole">Here\'s some of my latest projects.</h2><div class="grid frontpage-recent-projects">';
+	$list = '<div class="grid frontpage-recent-projects"><h2 class="unit whole">Here\'s some of my latest projects.</h2>';
 
 	while ( $q->have_posts() ) {
 		$q->the_post();
-		$list .= '<div class="unit whole">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
+		$list .= '<div class="unit half">' . '<a href="' . get_permalink() . '">' . '<h3>' . get_the_title() . '</h3>' . '</a>' . get_the_post_thumbnail() . '<p>' . get_the_excerpt() . '</p>' . '</div>';
 	}
 
 	wp_reset_query();
