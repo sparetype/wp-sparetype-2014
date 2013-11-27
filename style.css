@@ -198,6 +198,11 @@ html {
   margin: 0 0 54px 0;
   text-align: center; }
 
+.page-content,
+.loop-content {
+  width: 75%;
+  margin: 0 auto; }
+
 body.blog #content {
   max-width: 720px; }
 
@@ -534,10 +539,16 @@ a.page-numbers, span.page-numbers {
 
   .homepage-intro {
     margin: 180px auto 0;
-    max-width: 500px; } }
+    max-width: 500px; }
+
+  .page-content,
+  .loop-content {
+    max-width: 640px;
+    margin: 180px auto 0; } }
 @media screen and (min-width: 1025px) {
   #searchform {
     text-align: right; }
 
   #searchform .textbox {
     width: 80%; } }
+

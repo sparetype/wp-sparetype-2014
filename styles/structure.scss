@@ -69,6 +69,13 @@ body {
   text-align: center;
 }
 
+.page-content,
+.loop-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
 body.blog #content {
 	max-width: 720px;
 }
