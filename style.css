@@ -115,7 +115,7 @@ Tags: one-column, custom-menu, editor-style, featured-images, post-formats, stic
   clear: both; }
 
 /* Responsive Stuff */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 850px) {
   /* Stack anything that isn’t full-width on smaller screens */
   .grid .unit,
   .grid .unit:first-child,
@@ -201,10 +201,6 @@ html {
 body.blog #content {
   max-width: 720px; }
 
-article {
-  margin: 2rem 0;
-  padding: 1rem 0; }
-
 .clear {
   clear: both;
   display: block; }
@@ -281,6 +277,9 @@ a:hover {
 
 .frontpage-recent-posts a:visited {
   color: #9ca5a9; }
+
+.frontpage-recent-posts a:hover {
+  color: #fec34d; }
 
 .frontpage-recent-projects a {
   color: white; }
@@ -506,7 +505,7 @@ a img.aligncenter {
   text-align: center; }
 
 a.page-numbers, span.page-numbers {
-  border: 2px solid #9ca5a9;
+  border: 2px solid #3c4d56;
   font-size: 1.25rem;
   margin: 0.5%;
   padding: 0.85% 1.5%; }
@@ -541,9 +540,4 @@ a.page-numbers, span.page-numbers {
     text-align: right; }
 
   #searchform .textbox {
-    width: 80%; }
-
-  article:first-child {
-    margin: 7rem 0 0;
-    padding: 1rem 0; } }
-
+    width: 80%; } }
