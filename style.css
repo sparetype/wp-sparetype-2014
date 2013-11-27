@@ -169,7 +169,8 @@ html {
 
 #searchform {
   border: 7px solid #3c4d56;
-  padding: 9px 17px; }
+  padding: 9px 17px;
+  width: 260px; }
 
 #searchform .textbox {
   width: 75%; }

@@ -14,31 +14,16 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid'); ?>>
+    
+    <?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
 
-<header class="entry-header">
-
-<hgroup>
-
-<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
-<p class="date_posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
-
-</hgroup>
-
-</header><!-- .entry-header -->
-
-
-<div class="entry-content">
-
-<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>' ) ); ?>
-
-<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:' ) . '</span>', 'after' => '</div>' ) ); ?>
-
-</div><!-- .entry-content -->
-
-
+    <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+    <?php the_excerpt(); ?>
+    
 
 <footer class="entry-meta">
+    
+<p class="date_posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
 
 <?php $categories_list = get_the_category_list( __( ', ' ) );
 
@@ -73,32 +58,8 @@ if ( $tags_list ): ?>
 </article><!-- #post-<?php the_ID(); ?> -->
 
 
-
 <?php endwhile; ?>
 
-
-
-<?php else : ?>
-
-<article id="post-0" class="post no-results not-found">
-
-<header class="entry-header">
-
-<h1 class="entry-title"><?php _e( 'Nothing Found' ); ?></h1>
-
-</header><!-- .entry-header -->
-
-
-
-<div class="entry-content">
-
-<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.' ); ?></p>
-
-<?php get_search_form(); ?>
-
-</div><!-- .entry-content -->
-
-</article><!-- #post-0 -->
 
 <?php endif; ?>
 
