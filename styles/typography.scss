@@ -80,7 +80,7 @@ a:link {
     transition: all 0.4s;
 }
 a:visited {
-	color: $brand-color2;
+	color: $brand-color1;
 }
 a:hover {
 	color: $brand-color3;
@@ -99,3 +99,15 @@ a:active {
   line-height: 0;
   padding: 0;
 }
+
+.frontpage-recent-posts a { color: $brand-color2;}
+
+.frontpage-recent-posts a:visited { color: $brand-color2;}
+
+.frontpage-recent-posts a:hover { color: $brand-color3;}
+
+.frontpage-recent-projects a { color: $brand-color4;}
+
+.frontpage-recent-projects a:visited { color: $brand-color4;}
+
+.frontpage-recent-projects a:hover { color: $brand-color1;}
