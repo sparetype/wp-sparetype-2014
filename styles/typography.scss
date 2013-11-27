@@ -77,15 +77,16 @@ a:link {
 	color: $brand-color1;
 	padding-bottom: 1px;
 	text-decoration: none;
-    transition: all 0.4s
-}
-a:active {
+    transition: all 0.4s;
 }
 a:visited {
 	color: $brand-color2;
 }
 a:hover {
 	color: $brand-color3;
+    transition: all 0.4s;
+}
+a:active {
 }
 .entry-title > a {
 	border: medium none;

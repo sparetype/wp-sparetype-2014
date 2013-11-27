@@ -42,6 +42,30 @@ body {
     width: 75%;
 }
 
+.frontpage-recent-posts {
+  background-color: $brand-color1;
+  color: $brand-color2;
+  padding: 54px 8%;
+  margin: 90px 0 0;
+}
+
+.frontpage-recent-posts h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.frontpage-recent-projects {
+  background-color: $brand-color3;
+  color: $brand-color4;
+  padding: 54px 8%;
+  margin: 90px 0 0;
+}
+
+.frontpage-recent-projects h2 {
+  margin: 0;
+  text-align: center;
+}
+
 body.blog #content {
 	max-width: 720px;
 }
