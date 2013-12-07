@@ -204,6 +204,12 @@ html {
   width: 75%;
   margin: 0 auto; }
 
+blockquote.hiring {
+  background-color: #fec34d;
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+  padding: 1.25rem 3rem; }
+
 body.blog #content {
   max-width: 720px; }
 
