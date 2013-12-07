@@ -68,9 +68,6 @@ if ( $tags_list ): ?>
 <?php endif; ?>
 
 
-<?php comments_template(); ?>
-
-
 </div><!-- #content -->
 
 
