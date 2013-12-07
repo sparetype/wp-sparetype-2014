@@ -83,6 +83,14 @@ blockquote.hiring {
   padding: 1.25rem 3rem;
 }
 
+blockquote.hiring > p {
+  margin: 0;
+}
+
+blockquote.hiring > h3 {
+  margin: 0 0 1.25rem;
+}
+
 body.blog #content {
 	max-width: 720px;
 }
