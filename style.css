@@ -207,8 +207,10 @@ html {
 blockquote.hiring {
   background-color: #fec34d;
   font-weight: 600;
-  margin: 0 0 1.25rem;
-  padding: 1.25rem 3rem; }
+  margin: 0 0 2.5rem;
+  padding: 1.25rem 3rem;
+  color: #FFFFFF;
+}
 
 blockquote.hiring > p {
   margin: 0;
