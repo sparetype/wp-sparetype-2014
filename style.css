@@ -200,25 +200,28 @@ html {
   text-align: center; }
 
 .page-content,
-.loop-content {
+.loop-content,
+.single-content {
   width: 75%;
   margin: 0 auto; }
+
+.loop-content article {
+  border-bottom: 2px dashed #9CA5A9;
+  margin: 0 0 3rem;
+  padding: 0 0 3rem; }
 
 blockquote.hiring {
   background-color: #fec34d;
   font-weight: 600;
   margin: 0 0 2.5rem;
   padding: 1.25rem 3rem;
-  color: #FFFFFF;
-}
+  color: white; }
 
 blockquote.hiring > p {
-  margin: 0;
-}
+  margin: 0; }
 
 blockquote.hiring > h3 {
-  margin: 0 0 1.25rem;
-}
+  margin: 0 0 1.25rem; }
 
 body.blog #content {
   max-width: 720px; }
@@ -256,17 +259,17 @@ h5 {
 p {
   margin: 0 0 1.25rem; }
 
-.date_posted {
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-footer.entry-meta p {
+.date-posted,
+.cat-links,
+.tag-links {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   text-transform: lowercase; }
+
+.date-posted {
+  text-transform: uppercase; }
 
 /* =Links
 -------------------------------------------------------------- */
@@ -559,7 +562,8 @@ a.page-numbers, span.page-numbers {
     max-width: 500px; }
 
   .page-content,
-  .loop-content {
+  .loop-content,
+  .single-content {
     max-width: 640px;
     margin: 180px auto 0; } }
 @media screen and (min-width: 1025px) {

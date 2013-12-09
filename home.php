@@ -20,10 +20,11 @@ get_header(); ?>
     <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
     <?php the_excerpt(); ?>
     
+    <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:' ) . '</span>', 'after' => '</div>' ) ); ?>
 
 <footer class="entry-meta">
     
-<p class="date_posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
+<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
 
 <?php $categories_list = get_the_category_list( __( ', ' ) );
 

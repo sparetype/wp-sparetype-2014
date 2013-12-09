@@ -53,17 +53,18 @@ em {
 }
 #footer {
 }
-.date_posted {
-	font-size: 0.75rem;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-footer.entry-meta p {
+
+.date-posted,
+.cat-links,
+.tag-links,{
 	margin: 0;
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	font-weight: 600;
-	line-height: 1.4rem;
+	line-height: 1.3rem;
 	text-transform: lowercase;
+}
+.date-posted {
+	text-transform: uppercase;
 }
 
 

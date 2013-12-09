@@ -71,9 +71,16 @@ body {
 }
 
 .page-content,
-.loop-content {
+.loop-content,
+.single-content {
   width: 75%;
   margin: 0 auto;
+}
+
+.loop-content article {
+  border-bottom: 2px dashed #9CA5A9;
+  margin: 0 0 3rem;
+  padding: 0 0 3rem;
 }
 
 blockquote.hiring {

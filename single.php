@@ -1,10 +1,10 @@
 <?php
 
-/** The main template file. */
+/** The individual post page. */
 
 get_header(); ?>
 
-<div id="content" class="grid" role="main">
+<div class="single-content" role="main">
 
     
 <?php if ( have_posts() ) : ?>
@@ -21,29 +21,10 @@ get_header(); ?>
 
 <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
-<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
-
-<?php if ( is_sticky() ) : ?>
-
-<h3 class="entry-format"><?php _e( 'Featured' ); ?></h3>
-
-<?php endif; ?>
-
 </hgroup>
 
 </header><!-- .entry-header -->
 
-<?php if ( is_search() ) : // Only display Excerpts for Search ?>
-
-<div class="entry-summary">
-
-<?php the_excerpt(); ?>
-
-<?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
-
-</div><!-- .entry-summary -->
-
-<?php else : ?>
 
 <div class="entry-content">
 
@@ -53,11 +34,10 @@ get_header(); ?>
 
 </div><!-- .entry-content -->
 
-<?php endif; ?>
-
-
 
 <footer class="entry-meta">
+    
+<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
 
 <?php $categories_list = get_the_category_list( __( ', ' ) );
 
@@ -70,7 +50,6 @@ if ( $categories_list ): ?>
 </p>
 
 <?php endif; // End if categories ?>
-
 
 
 <?php $tags_list = get_the_tag_list( '', __( ', ' ) );
@@ -92,43 +71,15 @@ if ( $tags_list ): ?>
 </article><!-- #post-<?php the_ID(); ?> -->
 
 
-
 <?php endwhile; ?>
 
-
-
-<?php else : ?>
-
-<article id="post-0" class="post no-results not-found">
-
-<header class="entry-header">
-
-<h1 class="entry-title"><?php _e( 'Nothing Found' ); ?></h1>
-
-</header><!-- .entry-header -->
-
-
-
-<div class="entry-content">
-
-<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.' ); ?></p>
-
-<?php get_search_form(); ?>
-
-</div><!-- .entry-content -->
-
-</article><!-- #post-0 -->
-
 <?php endif; ?>
-
 
 
 <?php comments_template(); ?>
 
 
-
 </div><!-- #content -->
-
 
 
 <div id="pagination" role="navigation">
@@ -137,11 +88,7 @@ if ( $tags_list ): ?>
 
 global $wp_query;
 
-
-
 $big = 999999999; // need an unlikely integer
-
-
 
 echo paginate_links( array(
 
