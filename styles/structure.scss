@@ -78,9 +78,13 @@ body {
 }
 
 .loop-content article {
-  border-bottom: 2px dashed #9CA5A9;
+  border-bottom: 2px dashed $brand-color2;
   margin: 0 0 3rem;
   padding: 0 0 3rem;
+}
+
+.single-content article {
+    margin: 0 0 3rem;
 }
 
 blockquote.hiring {
