@@ -317,13 +317,19 @@ a:hover {
 /* =Comments
 -------------------------------------------------------------- */
 ol.commentlist {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
   list-style: none;
   margin: 0 0 1em;
   padding: 0;
   text-indent: 0; }
 
-ol.commentlist li.comment {
-  padding: 1em; }
+ol.commentlist li div.comment-body {
+  border-bottom: 7px solid #3C4D56;
+  margin: 0 0 2.5rem;
+  padding: 0 0 1.25rem; }
 
 ol.commentlist li.comment ul {
   list-style: square;
@@ -331,23 +337,15 @@ ol.commentlist li.comment ul {
 
 ol.commentlist li.comment ul.children {
   list-style: none;
-  margin: 1em 0 0;
+  margin: 0 0 0 2.5rem;
+  padding: 0;
   text-indent: 0; }
 
-ol.commentlist li.comment ul.children li.depth-2 {
-  margin: 0 0 .25em .25em; }
-
-ol.commentlist li.comment ul.children li.depth-3 {
-  margin: 0 0 .25em .25em; }
-
-ol.commentlist li.comment ul.children li.depth-4 {
-  margin: 0 0 .25em .25em; }
-
 ol.commentlist li.even {
-  background: #fff; }
+  background: white; }
 
 ol.commentlist li.odd {
-  background: #f6f6f6; }
+  background: #9ca5a9; }
 
 /* =jPanelMenu
 -------------------------------------------------------------- */
@@ -530,8 +528,11 @@ a img.aligncenter {
   text-align: center; }
 
 a.page-numbers, span.page-numbers {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   border: 2px solid #3c4d56;
-  font-size: 1.25rem;
   margin: 0.5%;
   padding: 0.85% 1.5%; }
 
