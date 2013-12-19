@@ -237,14 +237,6 @@ body.blog #content {
 -------------------------------------------------------------- */
 /* =Typography
 -------------------------------------------------------------- */
-/*
-Title: 58px
-Headlines: 36px
-Sub-headlines: 28px
-Primary Text: 22px
-Secondary Text: 17px
-Primary Leading: 36px
-*/
 html {
   font-size: 100%; }
 
@@ -265,10 +257,12 @@ p {
 .date-posted,
 .cat-links,
 .tag-links {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
   margin: 0;
-  font-size: 0.75rem;
   font-weight: 600;
-  line-height: 1.3rem;
   text-transform: lowercase; }
 
 .date-posted {

@@ -2,19 +2,20 @@
 /* =Typography
 -------------------------------------------------------------- */
 
-/*
-Title: 58px
-Headlines: 36px
-Sub-headlines: 28px
-Primary Text: 22px
-Secondary Text: 17px
-Primary Leading: 36px
-*/
+// =Variables for typography expressed in pixels
+
+$title-text: 58;
+$headline-text: 36;
+$subhead-text: 28;
+$primary-text: 22;
+$secondary-text: 17;
+$primary-leading: 36;
+$secondary-leading: 27;
 
 
 // =Font size and line height mixin for pixels and rems
 
-@mixin font-size($fontsize: 22, $lineheight: 36) {
+@mixin font-size($fontsize: $primary-text, $lineheight: $primary-leading) {
   font-size: $fontsize + px;
   font-size: ($fontsize / 16) + rem;
   line-height: $lineheight + px ;
@@ -26,7 +27,7 @@ html {
 	font-size: 100%;
 }
 body {
-    @include font-size(22,36);
+    @include font-size($primary-text,$primary-leading);
     color: $brand-color1;
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -62,10 +63,9 @@ em {
 .date-posted,
 .cat-links,
 .tag-links,{
+    @include font-size($secondary-text,$secondary-leading);
 	margin: 0;
-	font-size: 0.75rem;
 	font-weight: 600;
-	line-height: 1.3rem;
 	text-transform: lowercase;
 }
 .date-posted {
