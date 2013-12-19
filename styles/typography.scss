@@ -3,27 +3,32 @@
 -------------------------------------------------------------- */
 
 /*
-
 Title: 58px
-
 Headlines: 36px
-
 Sub-headlines: 28px
-
 Primary Text: 22px
-
 Secondary Text: 17px
-
+Primary Leading: 36px
 */
 
 
+// =Font size and line height mixin for pixels and rems
+
+@mixin font-size($fontsize: 22, $lineheight: 36) {
+  font-size: $fontsize + px;
+  font-size: ($fontsize / 16) + rem;
+  line-height: $lineheight + px ;
+  line-height: ($lineheight /16) + rem ;
+}
+
+
 html {
-	color: $brand-color1;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.375rem;
-  line-height: 1.75rem;
+	font-size: 100%;
 }
 body {
+    @include font-size(22,36);
+    color: $brand-color1;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
 }

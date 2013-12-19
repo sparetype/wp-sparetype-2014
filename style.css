@@ -206,9 +206,12 @@ html {
   margin: 0 auto; }
 
 .loop-content article {
-  border-bottom: 2px dashed #9CA5A9;
+  border-bottom: 2px dashed #9ca5a9;
   margin: 0 0 3rem;
   padding: 0 0 3rem; }
+
+.single-content article {
+  margin: 0 0 3rem; }
 
 blockquote.hiring {
   background-color: #fec34d;
@@ -235,23 +238,23 @@ body.blog #content {
 /* =Typography
 -------------------------------------------------------------- */
 /*
-
 Title: 58px
-
 Headlines: 36px
-
 Sub-headlines: 28px
-
 Primary Text: 22px
-
 Secondary Text: 17px
-
+Primary Leading: 36px
 */
 html {
-  color: #3c4d56;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100%; }
+
+body {
+  font-size: 22px;
   font-size: 1.375rem;
-  line-height: 1.75rem; }
+  line-height: 36px;
+  line-height: 2.25rem;
+  color: #3c4d56;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 h5 {
   margin: 0; }
@@ -360,9 +363,12 @@ ol.commentlist li.odd {
   display: none; }
 
 a.menu-trigger {
+  font-size: 34px;
+  font-size: 2.125rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   border: 7px solid #3c4d56;
   display: block;
-  font-size: 1.5rem;
   font-weight: 700;
   padding: 9px 17px;
   text-transform: uppercase;
@@ -572,4 +578,3 @@ a.page-numbers, span.page-numbers {
 
   #searchform .textbox {
     width: 80%; } }
-
