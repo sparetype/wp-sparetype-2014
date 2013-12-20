@@ -28,7 +28,6 @@
  #social * {
     margin: 0;
     padding: 0;
-    border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -424,7 +423,7 @@ override submit styles in TwentyEleven theme */
     margin-left: 6px;
 }
 #social .social-actions, #social .social-actions a, #social .social-comment-meta, #social .social-comment-meta a, #social .social-last-reply-when {
-    color: #999;
+    color: #9CA5A9;
     font-size: 12px;
 }
 #social a.comment-reply-link {
@@ -436,7 +435,6 @@ override submit styles in TwentyEleven theme */
     text-align: right;
 }
 #social .social-actions a, #social .social-comment-meta a {
-    text-decoration: underline;
 }
 #social .social-comment-meta {
     background: url('../../../plugins/social/assets/sprite-y-24-icons.png') no-repeat;
@@ -571,6 +569,7 @@ override submit styles in TwentyEleven theme */
 #social .social-nav li a {
     background: #fff;
     padding: 0 12px 4px 12px;
+    border: none;
 }
 #social #reply-title span, #social .social-nav .social-current-tab a {
     padding: 0 12px 4px 8px;
