@@ -79,12 +79,10 @@
  */
 #social .social-help,
 #social .social-psst {
-	color: #999;
-	font-size: 12px;
-}
-
-#social .social-help {
-	font-style: italic;
+color: #9CA5A9;
+font-size: 14px;
+display: block;
+text-transform: uppercase;
 }
 
 /** @section Sign-in and forms
@@ -112,26 +110,13 @@
 /* Specificity of selector is dialed to
 override TwentyEleven's treatment of text inputs in
 the respond form */
-#social input.social-input,
-#social textarea.social-input,
-#social .social-select {
-	background: #f8f8f8;
-	border: 1px solid #ccc;
-	-moz-border-radius: 3px; /* FF1+ */
-	-webkit-border-radius: 3px; /* Saf3+, Chrome */
-	-khtml-border-radius: 3px; /* Konqueror */
-	border-radius: 3px; /* Standard. IE9 */
-	/**
-	 * @bugfix border-radius background bleed
-	 * @see http://tumble.sneak.co.nz/post/928998513/fixing-the-background-bleed
-	 */
-	-webkit-background-clip: padding-box;
-	-moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); /* FF3.5+ */
-	-webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); /* Saf3+, Chrome */
-	box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1); /* Standard. Opera 10.5, IE9 */
-	font-size: 14px;
-	padding: 2px 4px;
-	text-indent: 0;
+#social input.social-input, #social textarea.social-input, #social .social-select {
+  background: none repeat scroll 0 0 #F8F8F8;
+  border: 5px solid #3C4D56;
+  padding: 9px 17px;
+  text-align: center;
+  text-indent: 0;
+  max-width: 500px;
 }
 
 /**
@@ -139,9 +124,6 @@ the respond form */
  */
 #social input.social-input,
 #social .social-select {
-	height: 22px;
-	padding-bottom: 1px;
-	padding-top: 3px;
 }
 
 #social .social-select {
@@ -164,9 +146,9 @@ the respond form */
 #social .social-input-row,
 #social .form-submit {
 	clear: left;
-	margin: 0 0 10px;
+	margin: 0 0 20px;
 	overflow: hidden;
-	padding-left: 80px;
+	text-align: center;
 	position: relative;
 	zoom: 1;
 }
@@ -179,86 +161,61 @@ Remove float from para wrapping submit button. */
 
 #social .form-submit,
 #social .social-input-row-submit {
-	height: 30px;
 	margin-bottom: 0;
 }
 
 #social .social-input-row .social-label {
-	color: #333;
-	cursor: pointer;
-	font-size: 14px;
-	display: block;
-	left: 7px;
-	position: absolute;
-	top: 4px;
-	width: 70px;
+  color: #3C4D56;
+  cursor: pointer;
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 27px;
 }
 
 #social #submit,
 #social .social-input-row .social-input {
-	/* Bypasses vertical alignment issues.
-	only effects social-input-row inputs */
-	float: left;
 	/* Specifically here to counteract issues with margins in TwentyTen,
 	but good to have either way */
 	margin: 0;
-}
-
-#social .social-input-row .social-help {
-	float: left;
-	line-height: 28px;
-	margin-left: 7px;
 }
 
 #social #respond {
 	/* Override TwentyEleven theme
 	Remove grey background */
 	background: transparent;
-	margin-bottom: 30px;
+	margin-bottom: 45px;
 	width: auto;
 }
 
 #social #respond input.social-input {
-	width: 314px;
+	width: 85%;
 }
 
 #social #respond textarea.social-input {
-	height: 83px;
-	width: 314px;
+  min-height: 175px;
+  width: 85%;
 }
 
 /* Specificity of this selector is dialed in to
 override submit styles in TwentyEleven theme */
 #social input#submit {
-	background: #e9e9e9 url(../../../plugins/social/assets/sprite-y-24.png) 0 0 no-repeat;
-	border: 1px solid #ccc;
-	-moz-border-radius: 4px; /* FF1+ */
-	-webkit-border-radius: 4px; /* Saf3+, Chrome */
-	-khtml-border-radius: 4px; /* Konqueror */
-	border-radius: 4px; /* Standard. IE9 */
-	/* Workaround for TwentyEleven theme
-	Remove box shadow */
-	-moz-box-shadow: none; /* FF3.5+ */
-	-webkit-box-shadow: none; /* Saf3+, Chrome */
-	box-shadow: none; /* Standard. Opera 10.5, IE9 */
-	color: #0867ab;
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 13px;
-	height: 24px;
-	margin: 0;
-	/**
-	 * @bugfix input width issue
-	 * @affected IE7
-	 * IE7 likes to make buttons with CSS applied WIDE, unless you apply overflow:visible
-	 */
-	overflow: visible;
-	padding: 4px 13px;
-	/* Override TwentyEleven theme styles
-	Remove left offset */
-	position: static;
-	text-shadow: #fff 0 1px 0;
+  background-color: #FEC34D;
+  border: 5px solid #3C4D56;
+   -webkit-box-shadow: inset 0px -3px 10px 0px rgba(201,155,62,1);
+-moz-box-shadow: inset 0px -3px 10px 0px rgba(201,155,62,1);
+box-shadow: inset 0px -3px 10px 0px rgba(201,155,62,1);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 36px;
+  margin: 0;
+  max-width: 500px;
+  padding: 9px 17px;
+  text-transform: uppercase;
+  width: 80%;
 }
 
 /* Specificity of this selector is dialed in to
@@ -339,9 +296,6 @@ override submit styles in TwentyEleven theme */
 /* Logged in form */
 
 .logged-in #social .social-input-row-comment .social-label {
-	/* Hide visually, but remain readable by screen readers */
-	left: -999em;
-	position: absolute;
 }
 
 .logged-in #social #respond .form-submit,
@@ -349,7 +303,6 @@ override submit styles in TwentyEleven theme */
 	/* Override TwentyEleven theme
 	remove float:right */
 	float: none;
-	padding-left: 50px;
 }
 
 /** @section Tabs
@@ -453,13 +406,10 @@ override submit styles in TwentyEleven theme */
 
 #social .social-identity {
 	margin-top: 10px;
-	position: relative;
+	text-align: center;
 }
 
 #social .social-identity .avatar {
-	left: 0;
-	position: absolute;
-	top: 2px;
 }
 
 #social #cancel-comment-reply-link {
@@ -721,10 +671,9 @@ override submit styles in TwentyEleven theme */
 
 /* Tab graphical treatment - selected tabs, and section headers*/
 #social #reply-title {
-	margin: 0;
-	overflow: hidden;
-	padding-left: 13px;
-	zoom: 1;
+  margin: 0 0 10px;
+  overflow: hidden;
+  text-align: center;
 }
 
 #social #reply-title span,
