@@ -76,7 +76,7 @@ if ( $tags_list ): ?>
 <?php endif; ?>
 
 
-<?php comments_template('', true); ?>
+<?php comments_template(); ?>
 
 
 </div><!-- #content -->

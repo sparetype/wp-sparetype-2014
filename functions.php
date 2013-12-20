@@ -210,82 +210,8 @@ add_shortcode( 'frontpage-recent-projects', 'sparetype_recent_projects_shortcode
 
 
 
+// Social plugin by Mailchimp overrides
 
-// Custom comment template
+define('SOCIAL_COMMENTS_CSS', get_stylesheet_directory_uri().'/styles/social_plugin_custom_stylesheet.css');
 
-function sparetype_comment_template( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment; ?>
-	
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<article id="comment-<?php comment_ID(); ?>" class="comment-body clearfix">
-            
-            <div class="author-avatar">
-               	<?php
-					$avatar_size = 96;
-					if ( '0' != $comment->comment_parent )
-				    	$avatar_size = 96;
-				echo get_avatar( $comment, $avatar_size ); ?>
-            </div>
-            
-            <div class="comment-block">
-                
-            <p class="comment-meta">
-                <?php printf(__('%s commented on'), get_comment_author_link()) ?>
-                <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a>
-            </p>
-            
-
-				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'sparetype' ); ?></em>
-					<br />
-				<?php endif; ?>
-
-			<p class="comment-content"><?php comment_text(); ?></p>
-            
-			<div class="reply comment-meta">
-				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply <span>&darr;</span>', 'sparetype' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-                <?php edit_comment_link( __( 'Edit', 'sparetype' ), '<span class="edit-link">', '</span>' ); ?>
-			</div><!-- .reply -->
-            </div>
-		</article><!-- #comment-## -->
-
-<?php }
-            
-        
-        
-// Custom facebook like template
-
-function sparetype_facebook_like_template( $comment, $args, $depth ) {
-	$GLOBALS['comment'] = $comment; ?>
-	
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<article id="comment-<?php comment_ID(); ?>" class="comment-body clearfix">
-            
-            <div class="author-avatar">
-               	<?php
-					$avatar_size = 96;
-					if ( '0' != $comment->comment_parent )
-				    	$avatar_size = 96;
-				echo get_avatar( $comment, $avatar_size ); ?>
-            </div>
-            
-            <div class="comment-block">
-                
-            <p class="comment-meta">
-                <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a>
-            </p>
-            
-
-				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'sparetype' ); ?></em>
-					<br />
-				<?php endif; ?>
-
-			<p class="comment-content"><?php comment_text(); ?></p>
-            
-            </div>
-		</article><!-- #comment-## -->
-
-<?php }
-            
 ?>

@@ -15,9 +15,7 @@ endif;
 
 <?php comment_form(); ?>
 
-
 <?php if ( have_comments() ) : ?>
-<?php if ( ! empty($comments_by_type['comment']) ) : ?>
 
 <h2 id="comments-title">
 <?php
@@ -27,26 +25,8 @@ number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</spa
 </h2>
 
 <ol class="commentlist">
-<?php wp_list_comments( array( 'type' => 'comment' , 'callback' => 'sparetype_comment_template' ) ); /* Loop through and list the comments. */ ?>
+<?php wp_list_comments(); /* Loop through and list the comments. */ ?>
 </ol>
-
-<?php endif; ?>
-
-<?php if ( ! empty($comments_by_type['social-facebook-like']) ) : ?>
-    <h3 id="pings">Likes</h3>
-    <ol class="commentlist">
-    <?php wp_list_comments( array( 'type' => 'social-facebook-like' , 'callback' => 'sparetype_facebook_like_template' ) ); ?>
-    </ol>
-    <?php endif; ?>
-
-
-    <?php if ( ! empty($comments_by_type['pings']) ) : ?>
-    <h3 id="pings">Trackbacks/Pingbacks</h3>
-    <ol class="commentlist">
-    <?php wp_list_comments('type=pings'); ?>
-    </ol>
-    <?php endif; ?>
-
 
 <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 <nav id="comment-nav-below">
@@ -61,7 +41,6 @@ elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type()
 ?>
 <p class="nocomments"><?php _e( 'Comments are closed.' ); ?></p>
 <?php endif; ?>
-
 
 
 </div><!-- #comments -->
