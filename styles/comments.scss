@@ -10,11 +10,24 @@ ol.commentlist {
 }
 ol.commentlist li {
 }
-ol.commentlist li div.comment-body {
-  border-bottom: 7px solid #3C4D56;
+ol.commentlist li .comment-body {
+  border-bottom: 1px solid #3C4D56;
   margin: 0 0 2.5rem;
   padding: 0 0 1.25rem;
 }
+
+.author-avatar {float:left;}
+
+.comment-block {
+  float: left;
+  margin: 0 0 0 1.25rem;
+}
+
+.comment-meta {
+    @include font-size(15,15);
+  font-weight: 600;
+}
+
 ol.commentlist li.alt {
 }
 ol.commentlist li.bypostauthor {

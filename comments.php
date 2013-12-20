@@ -15,7 +15,10 @@ endif;
 
 <?php comment_form(); ?>
 
+
 <?php if ( have_comments() ) : ?>
+<?php if ( ! empty($comments_by_type['comment']) ) : ?>
+
 <h2 id="comments-title">
 <?php
 printf( _n( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number() ),
@@ -23,15 +26,20 @@ number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</spa
 ?>
 </h2>
 
-<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-<nav id="comment-nav-above">
-<?php paginate_comments_links(); ?> 
-</nav>
-<?php endif; // check for comment navigation ?>
-
 <ol class="commentlist">
-<?php wp_list_comments( ); /* Loop through and list the comments. */ ?>
+<?php wp_list_comments( array( 'type' => 'comment' ,'callback' => 'sparetype_comment_template' ) ); /* Loop through and list the comments. */ ?>
 </ol>
+
+<?php endif; ?>
+
+
+    <?php if ( ! empty($comments_by_type['pings']) ) : ?>
+    <h3 id="pings">Trackbacks/Pingbacks</h3>
+    <ol class="commentlist">
+    <?php wp_list_comments('type=pings'); ?>
+    </ol>
+    <?php endif; ?>
+
 
 <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 <nav id="comment-nav-below">

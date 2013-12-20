@@ -326,10 +326,24 @@ ol.commentlist {
   padding: 0;
   text-indent: 0; }
 
-ol.commentlist li div.comment-body {
-  border-bottom: 7px solid #3C4D56;
+ol.commentlist li .comment-body {
+  border-bottom: 1px solid #3C4D56;
   margin: 0 0 2.5rem;
   padding: 0 0 1.25rem; }
+
+.author-avatar {
+  float: left; }
+
+.comment-block {
+  float: left;
+  margin: 0 0 0 1.25rem; }
+
+.comment-meta {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 15px;
+  line-height: 0.9375rem;
+  font-weight: 600; }
 
 ol.commentlist li.comment ul {
   list-style: square;
@@ -340,12 +354,6 @@ ol.commentlist li.comment ul.children {
   margin: 0 0 0 2.5rem;
   padding: 0;
   text-indent: 0; }
-
-ol.commentlist li.even {
-  background: white; }
-
-ol.commentlist li.odd {
-  background: #9ca5a9; }
 
 /* =jPanelMenu
 -------------------------------------------------------------- */
