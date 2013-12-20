@@ -571,7 +571,8 @@ a.page-numbers, span.page-numbers {
     margin: 0; }
 
   #navigation li:nth-child(2) {
-    order: -1; }
+    order: -1;
+    -webkit-box-ordinal-group: -1; }
 
   .homepage-intro {
     margin: 180px auto 0;

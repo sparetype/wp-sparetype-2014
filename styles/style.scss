@@ -197,6 +197,7 @@ a.page-numbers, span.page-numbers {
 
 #navigation li:nth-child(2) {
   order: -1;
+  -webkit-box-ordinal-group: -1;
 }
 
 .homepage-content {
