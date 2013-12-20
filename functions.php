@@ -251,4 +251,41 @@ function sparetype_comment_template( $comment, $args, $depth ) {
 
 <?php }
             
+        
+        
+// Custom facebook like template
+
+function sparetype_facebook_like_template( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment; ?>
+	
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<article id="comment-<?php comment_ID(); ?>" class="comment-body clearfix">
+            
+            <div class="author-avatar">
+               	<?php
+					$avatar_size = 96;
+					if ( '0' != $comment->comment_parent )
+				    	$avatar_size = 96;
+				echo get_avatar( $comment, $avatar_size ); ?>
+            </div>
+            
+            <div class="comment-block">
+                
+            <p class="comment-meta">
+                <a class="comment-permalink" href="<?php echo htmlspecialchars ( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a>
+            </p>
+            
+
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'sparetype' ); ?></em>
+					<br />
+				<?php endif; ?>
+
+			<p class="comment-content"><?php comment_text(); ?></p>
+            
+            </div>
+		</article><!-- #comment-## -->
+
+<?php }
+            
 ?>

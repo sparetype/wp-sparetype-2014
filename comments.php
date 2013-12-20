@@ -27,10 +27,17 @@ number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</spa
 </h2>
 
 <ol class="commentlist">
-<?php wp_list_comments( array( 'type' => 'comment' ,'callback' => 'sparetype_comment_template' ) ); /* Loop through and list the comments. */ ?>
+<?php wp_list_comments( array( 'type' => 'comment' , 'callback' => 'sparetype_comment_template' ) ); /* Loop through and list the comments. */ ?>
 </ol>
 
 <?php endif; ?>
+
+<?php if ( ! empty($comments_by_type['social-facebook-like']) ) : ?>
+    <h3 id="pings">Likes</h3>
+    <ol class="commentlist">
+    <?php wp_list_comments( array( 'type' => 'social-facebook-like' , 'callback' => 'sparetype_facebook_like_template' ) ); ?>
+    </ol>
+    <?php endif; ?>
 
 
     <?php if ( ! empty($comments_by_type['pings']) ) : ?>

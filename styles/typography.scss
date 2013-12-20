@@ -71,7 +71,9 @@ em {
 .date-posted {
 	text-transform: uppercase;
 }
-
+.form-allowed-tags {
+        @include font-size($secondary-text,$secondary-leading);
+}
 
 
 
