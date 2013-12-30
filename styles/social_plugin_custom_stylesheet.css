@@ -17,27 +17,7 @@
     line-height: 1.5;
     margin: 40px 0;
 }
-/**
- * Browser/theme style reset
- * This gives us a reliable foundation for our styles, regardless of theme
- * but scoped to our comments.
- *
- * Based on work by Eric Meyer
- * @see http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
- */
- #social * {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-#social a {
-    text-decoration: none;
-    outline: 0;
-}
-#social a:hover {
-}
+
 /** @section Utility
  -------------------------------------------------- */
 
