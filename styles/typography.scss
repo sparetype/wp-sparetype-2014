@@ -119,3 +119,14 @@ a:active {
 .frontpage-recent-projects a:visited { color: $brand-color4;}
 
 .frontpage-recent-projects a:hover { color: $brand-color1;}
+
+
+/* =Images inside links
+-------------------------------------------------------------- */
+.project-content a img,
+.page-content a img,
+.loop-content a img,
+.single-content a img, {
+  position: relative;
+  top: 10px;
+}
