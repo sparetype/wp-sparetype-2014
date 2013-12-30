@@ -14,7 +14,6 @@
 /* Override default theme line-height */
  #social {
     background: #fff;
-    line-height: 1.5;
     margin: 40px 0;
 }
 
@@ -287,6 +286,7 @@ override submit styles in TwentyEleven theme */
     list-style-position: outside;
     list-style-type: none;
     margin: 0;
+	padding: 0;
 }
 #social .social-comment {
     position: relative;
@@ -430,6 +430,7 @@ override submit styles in TwentyEleven theme */
     width: 16px;
     height: 16px;
     margin-left: 5px;
+	border: none;
 }
 #social .social-comment-meta .social-posted-from span {
     display: none;
