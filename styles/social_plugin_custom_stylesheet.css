@@ -37,7 +37,6 @@
     outline: 0;
 }
 #social a:hover {
-    text-decoration: underline;
 }
 /** @section Utility
  -------------------------------------------------- */
@@ -373,10 +372,10 @@ override submit styles in TwentyEleven theme */
     width: 16px;
 }
 #social .social-comment-inner {
-    margin-right: 10px;
     padding: 7px 0 0 10px;
     position: relative;
     zoom: 1;
+	margin: 0 10px 15px 0;
 }
 #social .social-comment-header, #social .social-comment-body, #social .social-comment-entry-meta {
     padding-left: 50px;
@@ -423,7 +422,6 @@ override submit styles in TwentyEleven theme */
     margin-left: 6px;
 }
 #social .social-actions, #social .social-actions a, #social .social-comment-meta, #social .social-comment-meta a, #social .social-last-reply-when {
-    color: #9CA5A9;
     font-size: 12px;
 }
 #social a.comment-reply-link {
@@ -682,11 +680,11 @@ override submit styles in TwentyEleven theme */
     visibility: hidden;
 }
 #social .depth-2 .social-comment-inner {
-    margin: 0 10px 0 60px;
+    margin: 0 10px 15px 60px;
 }
 #social .depth-3 .social-comment-inner {
-    margin: 0 10px 0 120px;
+    margin: 0 10px 15px 120px;
 }
 #social .depth-4 .social-comment-inner {
-    margin: 0 10px 0 180px;
+    margin: 0 10px 15px 180px;
 }
