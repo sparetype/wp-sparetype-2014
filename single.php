@@ -82,36 +82,6 @@ if ( $tags_list ): ?>
 </div><!-- #content -->
 
 
-<div id="pagination" role="navigation">
-
-<?php
-
-global $wp_query;
-
-$big = 999999999; // need an unlikely integer
-
-echo paginate_links( array(
-
-	'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
-
-	'format' => '?paged=%#%',
-
-	'current' => max( 1, get_query_var('paged') ),
-
-	'total' => $wp_query->max_num_pages,
-
-	'prev_text'    => __('&#171;&#171; Newer Posts'),
-
-	'next_text'    => __('Older Posts &#187;&#187;'),
-
-) );
-
-?>
-
-</div> <!-- end #pagination -->
-
-
-
 <div id="sidebar-2">
 
 <?php if ( !function_exists('dynamic_sidebar')
