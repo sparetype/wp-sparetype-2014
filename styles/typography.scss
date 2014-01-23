@@ -9,6 +9,7 @@ $headline-text: 36;
 $subhead-text: 28;
 $primary-text: 22;
 $secondary-text: 17;
+$title-leading: 60;
 $primary-leading: 36;
 $secondary-leading: 27;
 
@@ -34,6 +35,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
 }
 h1 {
+	@include font-size($title-text,$title-leading);
+	margin: 1.25rem 0;
 }
 h2 {
 }

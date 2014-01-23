@@ -164,7 +164,7 @@ add_filter( 'excerpt_more', 'sparetype_excerpt_readmore' );
 // Include projects in main loop
 
 function sparetype_project_post_type_loop($query) {
-  if ( !is_admin() && $query->is_main_query() ) {
+  if ( !is_admin() && is_home() && $query->is_main_query() ) {
       $query->set('post_type', array( 'post', 'sparetype_project' ) );
   }
 }

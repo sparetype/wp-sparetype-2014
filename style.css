@@ -250,6 +250,13 @@ body {
   color: #3c4d56;
   font-family: 'Source Sans Pro', sans-serif; }
 
+h1 {
+  font-size: 58px;
+  font-size: 3.625rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  margin: 1.25rem 0; }
+
 h5 {
   margin: 0; }
 
