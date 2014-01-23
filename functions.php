@@ -133,7 +133,7 @@ function sparetype_project_post_type() {
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
 		'menu_position'       => 5,
-		'menu_icon'           => '',
+		'menu_icon'           => 'dashicons-awards',
 		'can_export'          => true,
 		'has_archive'         => true,
 		'exclude_from_search' => false,
@@ -157,6 +157,19 @@ function sparetype_excerpt_readmore( $more ) {
 	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">Read More &gt; &gt;</a>';
 }
 add_filter( 'excerpt_more', 'sparetype_excerpt_readmore' );
+
+
+
+
+// Include projects in main loop
+
+function sparetype_project_post_type_loop($query) {
+  if ( !is_admin() && $query->is_main_query() ) {
+      $query->set('post_type', array( 'post', 'sparetype_project' ) );
+  }
+}
+
+add_action('pre_get_posts','sparetype_project_post_type_loop');
 
 
 
