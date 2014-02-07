@@ -177,7 +177,7 @@ add_action('pre_get_posts','sparetype_project_post_type_loop');
 // Recent posts for the front page
 
 function sparetype_recent_posts_shortcode( $atts ) {
-	extract( shortcode_atts( array( 'limit' => 3 ), $atts ) );
+	extract( shortcode_atts( array( 'limit' => 6 ), $atts ) );
 
 	$q = new WP_Query( 'posts_per_page=' . $limit );
 
@@ -185,7 +185,7 @@ function sparetype_recent_posts_shortcode( $atts ) {
 
 	while ( $q->have_posts() ) {
 		$q->the_post();
-		$list .= '<div class="unit half">' . get_the_post_thumbnail() . '<h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . '<p>' . get_the_excerpt() . '</p>' . '</div>';
+		$list .= '<div class="unit half">' . get_the_post_thumbnail() . '<h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . '</div>';
 	}
 
 	wp_reset_query();

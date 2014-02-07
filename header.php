@@ -49,8 +49,7 @@
         <input type="submit" id="searchsubmit" value="&#128269;" />
 
 </form></li>
-
-
+	
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-1') ) : ?>
 
 <?php endif; ?>
