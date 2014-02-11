@@ -16,8 +16,8 @@ body {
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   list-style: none outside none;
   margin: 0 auto;
   max-width: 260px;

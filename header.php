@@ -33,15 +33,11 @@
 </head>
     
 <body <?php body_class(''); ?>>
-    
-<?php wp_nav_menu( array('theme_location' => 'primary-navigation', 'container' => false, 'menu_id' => 'menu', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>' )); ?>
 
-<ul id="navigation" role="navigation">
-
-<li><a href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php bloginfo('template_directory'); ?>/images/st_sparetype_logo.svg" /></a></li>
-
-<li><a href="#" class="menu-trigger">&#9776; menu</a></li>
-    
+	<ul id="menu" class="menu">
+		
+<?php wp_nav_menu( array('theme_location' => 'primary-navigation', 'container' => false, 'menu_id' => '', 'items_wrap' => '%3$s' )); ?>
+	
 <li><form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
 
 <input class="textbox" value="Search" name="s" id="s" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}" type="text">
@@ -49,6 +45,13 @@
         <input type="submit" id="searchsubmit" value="&#128269;" />
 
 </form></li>
+	</ul>
+
+<ul id="navigation" role="navigation">
+
+<li><a href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php bloginfo('template_directory'); ?>/images/st_sparetype_logo.svg" /></a></li>
+
+<li><a href="#" class="menu-trigger">&#9776;</a></li>
 	
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-1') ) : ?>
 
