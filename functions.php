@@ -160,7 +160,6 @@ add_filter( 'excerpt_more', 'sparetype_excerpt_readmore' );
 
 
 
-
 // Include projects in main loop
 
 function sparetype_project_post_type_loop($query) {
@@ -170,35 +169,6 @@ function sparetype_project_post_type_loop($query) {
 }
 
 add_action('pre_get_posts','sparetype_project_post_type_loop');
-
-
-
-
-// Posts and projects for the front page
-
-function sparetype_frontpage_shortcode( ) {
-
-	$args = array(
-		'posts_per_page' => 6,
-		'tag' => 'frontpage'
-	);
-	
-	$query = new WP_Query( $args );
-
-	$list = '';
-
-	while ( $query->have_posts() ) {
-		$query->the_post();
-		$list .= '<article>' . get_the_post_thumbnail() . '<section><h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . get_the_excerpt() . '</section></article>';
-	}
-
-	wp_reset_query();
-
-	return $list ;
-}
-
-add_shortcode( 'sparetype-frontpage', 'sparetype_frontpage_shortcode' );
-
 
 
 
