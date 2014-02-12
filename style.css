@@ -182,24 +182,22 @@ html {
   width: 75%; }
 
 .homepage-intro {
-  margin: 216px 0 0 72px;
--moz-column-count: 2;
--moz-column-gap: 72px;
--webkit-column-count: 2;
--webkit-column-gap: 72px;
-column-count: 2;
-column-gap: 72px;
-max-width: 880px; }
+  margin: 216px 72px 0 72px;
+  -moz-column-count: 1;
+  -moz-column-gap: 72px;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 72px;
+  column-count: 1;
+  column-gap: 72px;
+}
 
 .homepage-intro article {
-        display: inline-block;
-        margin-bottom: 36px;
-        width: 100%;
-}
-.homepage-intro section {
-background-color: #ffffff;
-border: 2px solid #3c4d56;
-padding:36px;}
+  display: inline-block;
+  margin-bottom: 36px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #3c4d56;
+  padding: 36px; }
 
 .frontpage-recent-posts {
   background-color: #3c4d56;
@@ -598,6 +596,8 @@ a.page-numbers, span.page-numbers {
   background: none repeat scroll 0 0 #9ca5a9;
   color: #FFFFFF; }
 
+/* =Responsive
+-------------------------------------------------------------- */
 /* Responsive ---------------------------- */
 @media screen and (min-width: 850px) {
   .page-content,
@@ -609,7 +609,13 @@ a.page-numbers, span.page-numbers {
   .project-content {
     margin: 160px 0;
     padding: 0 8%; } }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1040px) {
+  .homepage-intro {
+    max-width: 880px;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; }
+
   #searchform {
     text-align: right; }
 
