@@ -155,18 +155,22 @@ html {
 #navigation {
   display: flex;
   display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   list-style: none outside none;
-  margin: 0 auto;
-  max-width: 260px;
-  padding: 0;
-  z-index: 10; }
+  padding: 36px 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  border-top: 2px solid #3c4d56;
+  border-bottom: 2px solid #3c4d56;
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9); }
 
 #navigation > li {
-  margin: 0 0 18px; }
+  margin: 0 0 0 72px;
+  background: none repeat scroll 0 0 #FFFFFF; }
 
 #searchform {
   border: 7px solid #3c4d56;
@@ -178,8 +182,24 @@ html {
   width: 75%; }
 
 .homepage-intro {
-  margin: 36px auto 0;
-  width: 75%; }
+  margin: 216px 0 0 72px;
+-moz-column-count: 2;
+-moz-column-gap: 72px;
+-webkit-column-count: 2;
+-webkit-column-gap: 72px;
+column-count: 2;
+column-gap: 72px;
+max-width: 880px; }
+
+.homepage-intro article {
+        display: inline-block;
+        margin-bottom: 36px;
+        width: 100%;
+}
+.homepage-intro section {
+background-color: #ffffff;
+border: 2px solid #3c4d56;
+padding:36px;}
 
 .frontpage-recent-posts {
   background-color: #3c4d56;
@@ -394,11 +414,12 @@ a.menu-trigger {
   border: 7px solid #3c4d56;
   display: block;
   font-weight: 700;
-  padding: 9px 17px;
+  text-align: center;
   text-transform: uppercase;
-  width: 260px;
+  width: 72px;
   transition: all 0.4s;
-  min-height: 72px; }
+  min-height: 72px;
+  line-height: 3.25rem; }
 
 a.menu-trigger:visited {
   color: #3c4d56; }
@@ -426,7 +447,11 @@ a.menu-trigger:focus {
   background: #3C4D56; }
 
 .jPanelMenu-panel {
-  background: none repeat scroll 0 0 #F4F0EB;
+  background: url(images/background.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   left: 0;
   min-height: 100%;
   position: static;
@@ -575,27 +600,6 @@ a.page-numbers, span.page-numbers {
 
 /* Responsive ---------------------------- */
 @media screen and (min-width: 850px) {
-  #navigation {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    max-width: none;
-    padding: 18px 0;
-    position: fixed;
-    width: 100%; }
-
-  #navigation > li {
-    background: none repeat scroll 0 0 #FFFFFF;
-    margin: 0; }
-
-  #navigation li:nth-child(2) {
-    order: -1;
-    -webkit-box-ordinal-group: -1; }
-
-  .homepage-intro {
-    margin: 180px auto 0;
-    max-width: 500px; }
-
   .page-content,
   .loop-content,
   .single-content {

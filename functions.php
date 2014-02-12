@@ -174,51 +174,30 @@ add_action('pre_get_posts','sparetype_project_post_type_loop');
 
 
 
-// Recent posts for the front page
+// Posts and projects for the front page
 
-function sparetype_recent_posts_shortcode( $atts ) {
-	extract( shortcode_atts( array( 'limit' => 6 ), $atts ) );
+function sparetype_frontpage_shortcode( ) {
 
-	$q = new WP_Query( 'posts_per_page=' . $limit );
+	$args = array(
+		'posts_per_page' => 6,
+		'tag' => 'frontpage'
+	);
+	
+	$query = new WP_Query( $args );
 
-	$list = '<div class="grid frontpage-recent-posts"><h2 class="unit whole">Take a glance at my latest posts.</h2>';
+	$list = '';
 
-	while ( $q->have_posts() ) {
-		$q->the_post();
-		$list .= '<div class="unit half">' . get_the_post_thumbnail() . '<h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . '</div>';
+	while ( $query->have_posts() ) {
+		$query->the_post();
+		$list .= '<article>' . get_the_post_thumbnail() . '<section><h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . get_the_excerpt() . '</section></article>';
 	}
 
 	wp_reset_query();
 
-	return $list . '</div>';
+	return $list ;
 }
 
-add_shortcode( 'frontpage-recent-posts', 'sparetype_recent_posts_shortcode' );
-
-
-
-
-
-// Recent projects for the front page
-
-function sparetype_recent_projects_shortcode( $atts ) {
-	extract( shortcode_atts( array( 'limit' => 3 ), $atts ) );
-
-	$q = new WP_Query( 'post_type=sparetype_project&posts_per_page=' . $limit );
-
-	$list = '<div class="grid frontpage-recent-projects"><h2 class="unit whole">Here\'s some of my latest projects.</h2>';
-
-	while ( $q->have_posts() ) {
-		$q->the_post();
-		$list .= '<div class="unit half">' . get_the_post_thumbnail() . '<h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . '<p>' . get_the_excerpt() . '</p>' . '</div>';
-	}
-
-	wp_reset_query();
-
-	return $list . '</div>';
-}
-
-add_shortcode( 'frontpage-recent-projects', 'sparetype_recent_projects_shortcode' );
+add_shortcode( 'sparetype-frontpage', 'sparetype_frontpage_shortcode' );
 
 
 

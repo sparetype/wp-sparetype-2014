@@ -1,0 +1,41 @@
+/* Responsive ---------------------------- */
+
+@media screen and (min-width: 850px) {
+
+#navigation {
+}
+
+#navigation > li {
+}
+
+.homepage-content {
+}
+
+.homepage-intro {
+}
+
+.page-content,
+.loop-content,
+.single-content {
+  max-width: 640px;
+  margin: 180px auto 0;
+}
+
+.project-content {
+  margin: 160px 0;
+  padding: 0 8%;
+}
+
+}
+
+@media screen and (min-width: 1025px) {
+
+#searchform {
+	text-align: right;
+}
+#searchform .textbox {
+	width: 80%;
+}
+article:first-child {
+}
+}

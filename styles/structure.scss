@@ -14,19 +14,23 @@ body {
 #navigation {
   display: flex;
   display: -webkit-flex;
-  flex-direction: column;
-  -webkit-flex-direction: column;
+  flex-direction: row;
+  -webkit-flex-direction: row;
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
   list-style: none outside none;
-  margin: 0 auto;
-  max-width: 260px;
-  padding: 0;
+  padding: 36px 0;
   z-index: 10;
+  position: fixed;
+  width: 100%;
+  border-top: 2px solid $brand-color1;
+  border-bottom: 2px solid $brand-color1;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
 }
 
 #navigation > li {
-  margin: 0 0 18px;
+  margin: 0 0 0 72px;
+  background: none repeat scroll 0 0 #FFFFFF;
 }
 
 #searchform {
@@ -44,9 +48,23 @@ body {
 }
 
 .homepage-intro {
-    margin: 36px auto 0;
-    width: 75%;
+    margin: 216px 0 0 72px;
+-moz-column-count: 2;
+-moz-column-gap: 72px;
+-webkit-column-count: 2;
+-webkit-column-gap: 72px;
+column-count: 2;
+column-gap: 72px;
+max-width: 880px;
 }
+
+.homepage-intro article {
+        display: inline-block;
+        margin-bottom: 36px;
+        width: 100%;
+background-color: $brand-color4;
+border: 2px solid $brand-color1;
+padding:36px;}
 
 .frontpage-recent-posts {
   background-color: $brand-color1;

@@ -49,9 +49,9 @@
 
 <ul id="navigation" role="navigation">
 
-<li><a href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php bloginfo('template_directory'); ?>/images/st_sparetype_logo.svg" /></a></li>
-
 <li><a href="#" class="menu-trigger">&#9776;</a></li>
+
+<li><a href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php bloginfo('template_directory'); ?>/images/st_sparetype_logo.svg" /></a></li>
 	
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-1') ) : ?>
 

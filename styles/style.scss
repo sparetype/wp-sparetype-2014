@@ -175,62 +175,7 @@ a.page-numbers, span.page-numbers {
 }
 
 
+/* =Responsive
+-------------------------------------------------------------- */
+@import "responsive";
 
-/* Responsive ---------------------------- */
-
-@media screen and (min-width: 850px) {
-
-#navigation {
-  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  max-width: none;
-  padding: 18px 0;
-  position: fixed;
-  width: 100%;
-}
-
-#navigation > li {
-  background: none repeat scroll 0 0 #FFFFFF;
-  margin: 0;
-}
-
-#navigation li:nth-child(2) {
-  order: -1;
-  -webkit-box-ordinal-group: -1;
-}
-
-.homepage-content {
- 
-}
-
-.homepage-intro {
-  margin: 180px auto 0;
-  max-width: 500px;
-}
-
-.page-content,
-.loop-content,
-.single-content {
-  max-width: 640px;
-  margin: 180px auto 0;
-}
-
-.project-content {
-  margin: 160px 0;
-  padding: 0 8%;
-}
-
-}
-
-@media screen and (min-width: 1025px) {
-
-#searchform {
-	text-align: right;
-}
-#searchform .textbox {
-	width: 80%;
-}
-article:first-child {
-}
-}
