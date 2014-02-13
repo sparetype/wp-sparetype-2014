@@ -198,31 +198,14 @@ html {
   border: 2px solid #3c4d56;
   padding: 36px; }
 
-.frontpage-recent-posts {
-  background-color: #3c4d56;
-  color: #9ca5a9;
-  padding: 54px 8%;
-  margin: 90px 0 0; }
-
-.frontpage-recent-posts h2 {
-  margin: 0 0 54px 0;
-  text-align: center; }
-
-.frontpage-recent-projects {
-  background-color: #fec34d;
-  color: white;
-  padding: 54px 8%;
-  margin: 90px 0 0; }
-
-.frontpage-recent-projects h2 {
-  margin: 0 0 54px 0;
-  text-align: center; }
-
 .page-content,
 .loop-content,
 .single-content {
   width: 75%;
-  margin: 0 auto; }
+  margin: 216px 72px 0 72px;
+  background-color: white;
+  border: 2px solid #3c4d56;
+  padding: 36px; }
 
 .loop-content article {
   border-bottom: 2px dashed #9ca5a9;
@@ -599,12 +582,6 @@ a.page-numbers, span.page-numbers {
 -------------------------------------------------------------- */
 /* Responsive ---------------------------- */
 @media screen and (min-width: 850px) {
-  .page-content,
-  .loop-content,
-  .single-content {
-    max-width: 640px;
-    margin: 180px auto 0; }
-
   .project-content {
     margin: 160px 0;
     padding: 0 8%; } }
@@ -614,6 +591,11 @@ a.page-numbers, span.page-numbers {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2; }
+
+  .page-content,
+  .loop-content,
+  .single-content {
+    max-width: 880px; }
 
   #searchform {
     text-align: right; }

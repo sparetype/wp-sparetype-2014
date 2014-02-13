@@ -65,35 +65,14 @@ background-color: $brand-color4;
 border: 2px solid $brand-color1;
 padding:36px;}
 
-.frontpage-recent-posts {
-  background-color: $brand-color1;
-  color: $brand-color2;
-  padding: 54px 8%;
-  margin: 90px 0 0;
-}
-
-.frontpage-recent-posts h2 {
-  margin: 0 0 54px 0;
-  text-align: center;
-}
-
-.frontpage-recent-projects {
-  background-color: $brand-color3;
-  color: $brand-color4;
-  padding: 54px 8%;
-  margin: 90px 0 0;
-}
-
-.frontpage-recent-projects h2 {
-  margin: 0 0 54px 0;
-  text-align: center;
-}
-
 .page-content,
 .loop-content,
 .single-content {
   width: 75%;
-  margin: 0 auto;
+    margin: 216px 72px 0 72px;
+	background-color: $brand-color4;
+border: 2px solid $brand-color1;
+	padding:36px;
 }
 
 .loop-content article {
