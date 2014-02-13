@@ -47,7 +47,8 @@ body {
   
 }
 
-.homepage-content {
+.homepage-content,
+.loop-content {
     margin: 216px 72px 0 72px;
 -moz-column-count: 1;
 -moz-column-gap: 72px;
@@ -57,7 +58,8 @@ column-count: 1;
 column-gap: 72px;
 }
 
-.homepage-content article {
+.homepage-content article,
+.loop-content article {
         display: inline-block;
         margin-bottom: 36px;
         width: 100%;
@@ -66,19 +68,12 @@ border: 2px solid $brand-color1;
 padding:36px;}
 
 .page-content,
-.loop-content,
 .single-content {
   width: 75%;
     margin: 216px 72px 0 72px;
 	background-color: $brand-color4;
 border: 2px solid $brand-color1;
 	padding:36px;
-}
-
-.loop-content article {
-  border-bottom: 2px dashed $brand-color2;
-  margin: 0 0 3rem;
-  padding: 0 0 3rem;
 }
 
 .single-content article {

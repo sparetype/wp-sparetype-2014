@@ -23,7 +23,8 @@
 
 @media screen and (min-width: 1040px) {
 
-.homepage-content {
+.homepage-content,
+	.loop-content {
 	max-width: 880px;
 	-moz-column-count: 2;
 	-webkit-column-count: 2;
@@ -31,7 +32,6 @@
 }
 	
 	.page-content,
-.loop-content,
 .single-content {
   max-width: 880px;
 }
