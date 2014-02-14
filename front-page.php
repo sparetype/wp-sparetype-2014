@@ -13,7 +13,8 @@ get_header(); ?>
 
 $args = array(
 		'posts_per_page' => 6,
-		'tag' => 'frontpage'
+		'tag' => 'frontpage',
+		'post_type' => 'any'
 	);
 
 $the_query = new WP_Query( $args );
