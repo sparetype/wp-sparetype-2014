@@ -173,7 +173,7 @@ html {
   background: none repeat scroll 0 0 #FFFFFF; }
 
 #searchform {
-  border: 7px solid #ffffff;
+  border: 7px solid white;
   padding: 9px 17px;
   margin: 0 13% 18px; }
 
@@ -421,7 +421,8 @@ a.menu-trigger:visited {
   color: #3c4d56; }
 
 a.menu-trigger:hover {
-  border-color: #fec34d; }
+  border-color: #fec34d;
+  color: #fec34d; }
 
 a.menu-trigger:focus {
   outline: none; }
