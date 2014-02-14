@@ -21,7 +21,7 @@ $the_query = new WP_Query( $args );
 if ( $the_query->have_posts() ) {
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
-		echo '<article>' . get_the_post_thumbnail() . '<section><h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . get_the_excerpt() . '</section></article>';
+		echo '<article>' . get_the_post_thumbnail($page->ID, 'excerpt-square') . '<section><h3>' . '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' . '</h3>' . get_the_excerpt() . '</section></article>';
 	}
 } else {
 }

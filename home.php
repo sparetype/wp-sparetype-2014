@@ -15,10 +15,13 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid'); ?>>
     
-    <?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
+    <?php if ( has_post_thumbnail() ) {the_post_thumbnail('excerpt-square');} ?>
 
-    <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-    <?php the_excerpt(); ?>
+	<section>
+    <h3 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+    
+	
+	<?php the_excerpt(); ?>
     
     <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:' ) . '</span>', 'after' => '</div>' ) ); ?>
 
@@ -55,7 +58,7 @@ if ( $tags_list ): ?>
 
 
 </footer><!-- #entry-meta -->
-
+</section>
 </article><!-- #post-<?php the_ID(); ?> -->
 
 

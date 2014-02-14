@@ -15,6 +15,8 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid'); ?>>
 
+<?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-header', NULL,  'header-single'); endif; ?>
+	
 <header class="entry-header">
 
 <hgroup>

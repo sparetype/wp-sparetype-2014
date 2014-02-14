@@ -27,9 +27,11 @@ add_theme_support( 'automatic-feed-links' );
 
 // This theme uses Featured Images (also known as post thumbnails) for excerpts
 add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 440, 440, true );
 
-// Add custom image sizes for main excerpts maximum
-add_image_size( 'excerpt-feature', 500, 300 ); // Used for featured posts if a large-feature doesn't exist
+// Add custom image sizes for featured images
+add_image_size( 'excerpt-square', 440, 440, true );
+add_image_size( 'header-single', 880, 440, true );
 
 // This theme uses wp_nav_menu() in one location.
 register_nav_menu( 'primary-navigation', 'Primary Navigation' );
@@ -175,5 +177,21 @@ add_action('pre_get_posts','sparetype_project_post_type_loop');
 // Social plugin by Mailchimp overrides
 
 define('SOCIAL_COMMENTS_CSS', get_stylesheet_directory_uri().'/styles/social_plugin_custom_stylesheet.css');
+
+
+
+// Register multiple featured images
+
+      if (class_exists('MultiPostThumbnails')) {
+            $types = array('post', 'page', 'sparetype_project');
+            foreach($types as $type) {
+                new MultiPostThumbnails(array(
+                    'label' => 'Single Page Header',
+                    'id' => 'secondary-header',
+                    'post_type' => $type
+                    )
+                );
+            }
+        }
 
 ?>

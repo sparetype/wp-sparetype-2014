@@ -63,8 +63,13 @@ column-gap: 72px;
         display: inline-block;
         margin-bottom: 36px;
         width: 100%;
-background-color: $brand-color4;
-border: 2px solid $brand-color1;
+	background-color: $brand-color4;
+	border: 2px solid $brand-color1;
+
+}
+
+.homepage-content section,
+.loop-content section {
 padding:36px;}
 
 .page-content,
