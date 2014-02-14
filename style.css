@@ -261,10 +261,10 @@ h2 {
   font-size: 2.25rem;
   line-height: 44px;
   line-height: 2.75rem;
-  margin: 1.25rem 0; }
+  margin: 0 0 1.25rem 0; }
 
 h3 {
-  margin-top: 0; }
+  margin: 0 0 1.25rem 0; }
 
 h5 {
   margin: 0; }
@@ -447,7 +447,7 @@ a.menu-trigger:focus {
   top: 0;
   width: 100%;
   z-index: 2;
-  padding: 18px 0; }
+  padding: 18px 0 72px; }
 
 .jPM-specific {
   display: none; }
