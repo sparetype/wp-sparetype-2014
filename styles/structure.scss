@@ -34,13 +34,20 @@ body {
 }
 
 #searchform {
-	border: 7px solid $brand-color1;
+	border: 7px solid $brand-color4;
 	padding: 9px 17px;
-    width: 260px;
-	min-height: 72px;
+margin: 0 13% 18px;
 }
 #searchform .textbox {
-	width: 75%;
+width: 100%;
+margin: 0;
+padding: 0 5px;}
+
+#searchform #searchsubmit {
+width: 100%;
+margin: 0;
+border: 0;
+padding: 0;
 }
 
 .homepage-content {

@@ -173,13 +173,20 @@ html {
   background: none repeat scroll 0 0 #FFFFFF; }
 
 #searchform {
-  border: 7px solid #3c4d56;
+  border: 7px solid #ffffff;
   padding: 9px 17px;
-  width: 260px;
-  min-height: 72px; }
+  margin: 0 13% 18px; }
 
 #searchform .textbox {
-  width: 75%; }
+  width: 100%;
+  margin: 0;
+  padding: 0 5px; }
+
+#searchform #searchsubmit {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0; }
 
 .homepage-content,
 .loop-content {
@@ -607,10 +614,4 @@ a.page-numbers, span.page-numbers {
 
   .page-content,
   .single-content {
-    max-width: 880px; }
-
-  #searchform {
-    text-align: right; }
-
-  #searchform .textbox {
-    width: 80%; } }
+    max-width: 880px; } }
