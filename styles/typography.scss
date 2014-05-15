@@ -108,11 +108,13 @@ a:active {
 }
 
 .home-logo:link {
-  border: medium none;
-  display: block;
+  border: 0;
+  display: inline-block;
   font-size: 0;
   line-height: 0;
+  margin: 27px 72px;
   padding: 0;
+  width: 200px;
 }
 
 .frontpage-recent-posts a { color: $brand-color2;}

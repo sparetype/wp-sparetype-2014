@@ -56,8 +56,8 @@ padding: 0;
 
 .homepage-content,
 .loop-content {
-    margin: 216px 72px 0 72px;
--moz-column-count: 1;
+margin: 180px auto;
+	-moz-column-count: 1;
 -moz-column-gap: 72px;
 -webkit-column-count: 1;
 -webkit-column-gap: 72px;
@@ -71,7 +71,7 @@ column-gap: 72px;
         margin-bottom: 36px;
         width: 100%;
 	background-color: $brand-color4;
-	border: 2px solid $brand-color1;
+	border-bottom: 2px solid $brand-color2;
 
 }
 

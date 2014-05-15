@@ -22,7 +22,7 @@
 .grid .unit:last-child { }
 
 
-/* Nested grids already have padding though, so let’s nuke it */
+/* Nested grids already have padding though, so lets nuke it */
 
 .unit .unit:first-child { padding-left: 0; }
 .unit .unit:last-child { padding-right: 0; }
@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 850px) {
 
-  /* Stack anything that isn’t full-width on smaller screens */
+  /* Stack anything that isnt full-width on smaller screens */
 
   .grid .unit,
 
