@@ -53,28 +53,8 @@ add_action( 'after_setup_theme', 'sparetype_setup' );
 function sparetype_sidebar_init() {
 
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar' ),
-		'id' => 'sidebar-1',
-		'description' => __( 'This sidebar appears under the main navigation' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name' => __( 'Floating Sidebar' ),
-		'id' => 'sidebar-2',
-		'description' => __( 'This sidebar floats in on larger screen sizes' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
 		'name' => __( 'Footer Area One' ),
-		'id' => 'sidebar-3',
+		'id' => 'sidebar-1',
 		'description' => __( 'An optional widget area for your site footer' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -84,6 +64,26 @@ function sparetype_sidebar_init() {
 
 	register_sidebar( array(
 		'name' => __( 'Footer Area Two' ),
+		'id' => 'sidebar-2',
+		'description' => __( 'An optional widget area for your site footer' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer Area Three' ),
+		'id' => 'sidebar-3',
+		'description' => __( 'An optional widget area for your site footer' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer Area Four' ),
 		'id' => 'sidebar-4',
 		'description' => __( 'An optional widget area for your site footer' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',

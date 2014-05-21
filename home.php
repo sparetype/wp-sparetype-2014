@@ -110,17 +110,4 @@ echo paginate_links( array(
 </div> <!-- end #pagination -->
 
 
-
-<div id="sidebar-2">
-
-<?php if ( !function_exists('dynamic_sidebar')
-
-|| !dynamic_sidebar('sidebar-2') ) : ?>
-
-<?php endif; ?>
-
-</div> <!-- end #sidebar-2 -->
-
-
-
 <?php get_footer(); ?>
