@@ -242,6 +242,21 @@ blockquote.hiring > h3 {
 body.blog #content {
   max-width: 720px; }
 
+#footer {
+  background: #3c4d56;
+  z-index: 3;
+  width: 100%;
+  border-top: 9px solid #fec34d;
+  -moz-column-count: 2;
+  -moz-column-gap: 72px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 72px;
+  column-count: 2;
+  column-gap: 72px;
+  color: #FFFFFF;
+  margin: 72px 0 0;
+  padding: 36px 0; }
+
 .clear {
   clear: both;
   display: block; }
