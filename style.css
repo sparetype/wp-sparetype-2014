@@ -209,10 +209,16 @@ html {
 .loop-content section {
   padding: 36px; }
 
-.page-content,
-.single-content {
+.page-content {
   width: 75%;
   margin: 184px 72px 0 72px;
+  background-color: white;
+  border: 2px solid #3c4d56;
+  padding: 36px; }
+
+.single-content {
+  width: 75%;
+  margin: 184px auto 0;
   background-color: white;
   border: 2px solid #3c4d56;
   padding: 36px; }
@@ -717,6 +723,8 @@ a.page-numbers, span.page-numbers {
   .loop-content {
     max-width: 720px; }
 
-  .page-content,
+  .page-content {
+    max-width: 630px; }
+
   .single-content {
-    max-width: 630px; } }
+    max-width: 706px; } }

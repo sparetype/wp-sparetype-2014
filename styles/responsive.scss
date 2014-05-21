@@ -28,10 +28,14 @@
 	max-width: 720px;
 }
 	
-	.page-content,
-.single-content {
+	.page-content {
   max-width: 630px;
 }
+
+.single-content {
+  max-width: 706px;
+}
+	
 article:first-child {
 }
 }

@@ -79,10 +79,17 @@ column-gap: 72px;
 .loop-content section {
 padding:36px;}
 
-.page-content,
-.single-content {
+.page-content {
   width: 75%;
     margin: 184px 72px 0 72px;
+	background-color: $brand-color4;
+border: 2px solid $brand-color1;
+	padding:36px;
+}
+
+.single-content {
+  width: 75%;
+    margin: 184px auto 0;
 	background-color: $brand-color4;
 border: 2px solid $brand-color1;
 	padding:36px;
