@@ -33,20 +33,24 @@ body {
   background: none repeat scroll 0 0 #FFFFFF;
 }
 
+#sidebar-1 {
+  margin: 0 0 0 72px;
+}
 #searchform {
-	border: 7px solid $brand-color4;
-	padding: 9px 17px;
-margin: 0 13% 18px;
 }
 #searchform .textbox {
 width: 100%;
 margin: 0;
 padding: 0 5px;}
 
+#searchform #s {
+  margin: 0 0 0.75rem;
+  width: 50%;
+}
+
 #searchform #searchsubmit {
-width: 100%;
+width: 50%;
 margin: 0;
-border: 0;
 padding: 0;
 }
 

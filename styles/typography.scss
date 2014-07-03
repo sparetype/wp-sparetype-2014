@@ -81,6 +81,9 @@ em {
 .form-allowed-tags {
         @include font-size($secondary-text,$secondary-leading);
 }
+.screen-reader-text {
+  display: none;
+}
 
 
 
