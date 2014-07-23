@@ -255,9 +255,10 @@ body.blog #content {
   margin: 72px 0 0;
   padding: 36px 72px; }
 
-#footer div {
+#footer .sidebar {
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 72px; }
 
 .clear {
   clear: both;
