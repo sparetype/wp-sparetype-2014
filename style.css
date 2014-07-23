@@ -171,9 +171,6 @@ html {
   margin: 0 0 0 72px;
   background: none repeat scroll 0 0 #FFFFFF; }
 
-#sidebar-1 {
-  margin: 0 0 0 72px; }
-
 #searchform .textbox {
   width: 100%;
   margin: 0;
@@ -248,15 +245,19 @@ body.blog #content {
   z-index: 3;
   width: 100%;
   border-top: 9px solid #fec34d;
-  -moz-column-count: 2;
+  -moz-column-count: 1;
   -moz-column-gap: 72px;
-  -webkit-column-count: 2;
+  -webkit-column-count: 1;
   -webkit-column-gap: 72px;
-  column-count: 2;
+  column-count: 1;
   column-gap: 72px;
   color: #FFFFFF;
   margin: 72px 0 0;
-  padding: 36px 0; }
+  padding: 36px 72px; }
+
+#footer div {
+  display: inline-block;
+  width: 100%; }
 
 .clear {
   clear: both;
@@ -351,23 +352,19 @@ a:hover {
   padding: 0;
   width: 200px; }
 
-.frontpage-recent-posts a {
-  color: #9ca5a9; }
+#footer a:link {
+  border-bottom: 1px dotted;
+  color: white;
+  padding-bottom: 1px;
+  text-decoration: none;
+  transition: all 0.4s; }
 
-.frontpage-recent-posts a:visited {
-  color: #9ca5a9; }
-
-.frontpage-recent-posts a:hover {
-  color: #fec34d; }
-
-.frontpage-recent-projects a {
+#footer a:visited {
   color: white; }
 
-.frontpage-recent-projects a:visited {
-  color: white; }
-
-.frontpage-recent-projects a:hover {
-  color: #3c4d56; }
+#footer a:hover {
+  color: #fec34d;
+  transition: all 0.4s; }
 
 /* =Images inside links
 -------------------------------------------------------------- */
@@ -746,4 +743,9 @@ a.page-numbers, span.page-numbers {
     max-width: 630px; }
 
   .single-content {
-    max-width: 706px; } }
+    max-width: 706px; }
+
+  #footer {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }

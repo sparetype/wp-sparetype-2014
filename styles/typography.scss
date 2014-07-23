@@ -120,17 +120,22 @@ a:active {
   width: 200px;
 }
 
-.frontpage-recent-posts a { color: $brand-color2;}
-
-.frontpage-recent-posts a:visited { color: $brand-color2;}
-
-.frontpage-recent-posts a:hover { color: $brand-color3;}
-
-.frontpage-recent-projects a { color: $brand-color4;}
-
-.frontpage-recent-projects a:visited { color: $brand-color4;}
-
-.frontpage-recent-projects a:hover { color: $brand-color1;}
+#footer a:link {
+	border-bottom: 1px dotted;
+	color: $brand-color4;
+	padding-bottom: 1px;
+	text-decoration: none;
+    transition: all 0.4s;
+}
+#footer a:visited {
+	color: $brand-color4;
+}
+#footer a:hover {
+	color: $brand-color3;
+    transition: all 0.4s;
+}
+#footer a:active {
+}
 
 
 /* =Images inside links

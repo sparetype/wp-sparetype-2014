@@ -33,9 +33,6 @@ body {
   background: none repeat scroll 0 0 #FFFFFF;
 }
 
-#sidebar-1 {
-  margin: 0 0 0 72px;
-}
 #searchform {
 }
 #searchform .textbox {
@@ -127,15 +124,17 @@ body.blog #content {
   z-index: 3;
   width: 100%;
   border-top: 9px solid $brand-color3;
-	-moz-column-count: 2;
+	-moz-column-count: 1;
 -moz-column-gap: 72px;
--webkit-column-count: 2;
+-webkit-column-count: 1;
 -webkit-column-gap: 72px;
-column-count: 2;
+column-count: 1;
 column-gap: 72px;
 	color: #FFFFFF;
     margin: 72px 0 0;
-    padding: 36px 0;
+    padding: 36px 72px;
+}
+#footer div {display:inline-block; width:100%;
 }
 article {
 
