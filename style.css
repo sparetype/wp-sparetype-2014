@@ -433,7 +433,8 @@ ol.commentlist li.comment ul.children {
  *
  * ============================================= */
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 0; }
 
 @-webkit-viewport {
@@ -504,15 +505,6 @@ header.site-navigation {
   top: 0;
   border-bottom: 9px solid #fec34d; }
 
-.logo {
-  -webkit-tap-highlight-color: transparent;
-  text-decoration: none;
-  font-weight: bold;
-  line-height: 55px;
-  padding: 0 20px;
-  color: #fff;
-  float: left; }
-
 /* ------------------------------------------
   MASK
 --------------------------------------------- */
@@ -579,13 +571,12 @@ header.site-navigation {
   border-top: 1px solid white;
   text-decoration: none;
   padding: 0.7em 1em;
-  color: #fff;
+  color: white;
   width: 100%;
   float: left; }
 
-.nav-collapse a:active,
-.nav-collapse .active a {
-  background: #b73214; }
+.nav-collapse a:hover {
+  color: #fec34d; }
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {

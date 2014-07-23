@@ -11,7 +11,8 @@
  * ============================================= */
 
 a:active,
-a:hover {
+a:hover,
+a:focus {
   outline: 0;
 }
 
@@ -91,16 +92,6 @@ header.site-navigation {
   left: 0;
   top: 0;
   border-bottom: 9px solid $brand-color3;
-}
-
-.logo {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  text-decoration: none;
-  font-weight: bold;
-  line-height: 55px;
-  padding: 0 20px;
-  color: #fff;
-  float: left;
 }
 
 
@@ -189,14 +180,13 @@ header.site-navigation {
   border-top: 1px solid white;
   text-decoration: none;
   padding: 0.7em 1em;
-  color: #fff;
+  color: $brand-color4;
   width: 100%;
   float: left;
 }
 
-.nav-collapse a:active,
-.nav-collapse .active a {
-  background: #b73214;
+.nav-collapse a:hover {
+  color: $brand-color3;
 }
 
 @media screen and (min-width: 40em) {
