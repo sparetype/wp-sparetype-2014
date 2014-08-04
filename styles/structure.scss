@@ -58,7 +58,7 @@ padding: 0;
 .homepage-content,
 .loop-content {
 margin: 180px auto;
-	-moz-column-count: 1;
+-moz-column-count: 1;
 -moz-column-gap: 72px;
 -webkit-column-count: 1;
 -webkit-column-gap: 72px;
@@ -69,10 +69,10 @@ column-gap: 72px;
 .homepage-content article,
 .loop-content article {
         display: inline-block;
-        margin-bottom: 36px;
+        margin-bottom: 72px;
         width: 100%;
 	background-color: $brand-color4;
-	border-bottom: 2px solid $brand-color2;
+	border: 2px solid $brand-color1;
 
 }
 
