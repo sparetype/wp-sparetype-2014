@@ -7,14 +7,7 @@
 
 #navigation > li {
 }
-
-.homepage-content {
-}
-
-.homepage-intro {
-}
 	
-	.homepage-content,
 .loop-content {
 -moz-column-count: 2;
 -webkit-column-count: 2;
@@ -30,7 +23,6 @@ column-count: 2;
 
 @media screen and (min-width: 1040px) {
 
-.homepage-content,
 	.loop-content {
 	max-width: 720px;
 }
@@ -53,7 +45,6 @@ column-count: 2;
 }
 
 @media screen and (min-width: 1240px) {
-		.homepage-content,
 .loop-content {
 -moz-column-count: 3;
 -webkit-column-count: 3;

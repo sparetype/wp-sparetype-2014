@@ -51,11 +51,6 @@ margin: 0;
 padding: 0;
 }
 
-.homepage-content {
-  
-}
-
-.homepage-content,
 .loop-content {
 margin: 180px auto;
 -moz-column-count: 1;
@@ -66,7 +61,6 @@ column-count: 1;
 column-gap: 72px;
 }
 
-.homepage-content article,
 .loop-content article {
         display: inline-block;
         margin-bottom: 72px;
@@ -76,7 +70,6 @@ column-gap: 72px;
 
 }
 
-.homepage-content section,
 .loop-content section {
 padding:36px;}
 
