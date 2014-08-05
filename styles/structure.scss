@@ -52,7 +52,7 @@ padding: 0;
 }
 
 .loop-content {
-margin: 180px auto;
+margin: 184px 72px;
 -moz-column-count: 1;
 -moz-column-gap: 72px;
 -webkit-column-count: 1;
@@ -74,16 +74,14 @@ column-gap: 72px;
 padding:36px;}
 
 .page-content {
-  width: 75%;
-    margin: 184px 72px 0 72px;
+    margin: 184px 72px 0;
 	background-color: $brand-color4;
 border: 2px solid $brand-color1;
 	padding:36px;
 }
 
 .single-content {
-  width: 75%;
-    margin: 184px auto 0;
+    margin: 184px 72px 0;
 	background-color: $brand-color4;
 border: 2px solid $brand-color1;
 	padding:36px;
