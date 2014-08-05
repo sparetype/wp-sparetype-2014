@@ -265,7 +265,7 @@ header.site-navigation {
 }
 
 .nav-toggle.active:before {
-  content: "\78"; /* Close icon */
+  content: "\78\0000a0MENU"; /* Close icon */
 }
 
 .nav-toggle:hover { color: $brand-color3; border:none;

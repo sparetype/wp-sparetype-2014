@@ -638,7 +638,7 @@ header.site-navigation {
   top: 8px; }
 
 .nav-toggle.active:before {
-  content: "\78";
+  content: "\78\0000a0MENU";
   /* Close icon */ }
 
 .nav-toggle:hover {
