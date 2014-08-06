@@ -210,13 +210,3 @@ window.smoothScroll = (function (window, document, undefined) {
   };
 
 })(window, document);
-/**
-* Created with WP 2014.
-* User: sparetype
-* Date: 2014-05-13
-* Time: 01:56 AM
-* To change this template use Tools | Templates.
-*/
-define(function() {
-return {};
-});
