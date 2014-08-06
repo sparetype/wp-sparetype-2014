@@ -15,6 +15,10 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid'); ?>>
     
+	<header class="entry-meta">
+<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
+</header><!-- #entry-meta -->
+	
     <?php if ( has_post_thumbnail() ) {the_post_thumbnail('excerpt-square');} ?>
 
 	<section>
@@ -25,40 +29,8 @@ get_header(); ?>
     
     <?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:' ) . '</span>', 'after' => '</div>' ) ); ?>
 
-<footer class="entry-meta">
-    
-<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
-
-<?php $categories_list = get_the_category_list( __( ', ' ) );
-
-if ( $categories_list ): ?>
-
-<p class="cat-links">
-
-<?php printf( __( '<span class="%1$s">Category :</span> %2$s' ), 'entry-utility-prep entry-utility-prep-cat-links', $categories_list ); ?>
-
-</p>
-
-<?php endif; // End if categories ?>
-
-
-
-<?php $tags_list = get_the_tag_list( '', __( ', ' ) );
-
-if ( $tags_list ): ?>
-
-<p class="tag-links">
-
-<?php printf( __( '<span class="%1$s">Tag :</span> %2$s' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-
-</p>
-
-<?php endif; // End if $tags_list ?>
-
-
-
-</footer><!-- #entry-meta -->
 </section>
+
 </article><!-- #post-<?php the_ID(); ?> -->
 
 

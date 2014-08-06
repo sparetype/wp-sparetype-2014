@@ -52,7 +52,7 @@ padding: 0;
 }
 
 .loop-content {
-margin: 184px 72px;
+margin: 184px 72px 18px;
 -moz-column-count: 1;
 -moz-column-gap: 72px;
 -webkit-column-count: 1;
@@ -68,6 +68,11 @@ column-gap: 72px;
 	background-color: $brand-color4;
 	border: 2px solid $brand-color1;
 
+}
+.loop-content .entry-meta {
+  background-color: $brand-color1;
+  color: $brand-color4;
+  padding: 6px 36px 9px;
 }
 
 .loop-content section {
