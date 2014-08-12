@@ -1,0 +1,118 @@
+/*
+Theme Name: SpareType2014
+Description: Used to style the TinyMCE editor.
+*/
+/* =Variables
+-------------------------------------------------------------- */
+/* Dark grey blue */
+/* Light grey */
+/* Yellow-orange */
+/* White */
+/* =Normalize default browser CSS. Based on work by Nicolas Gallagher http://necolas.github.io/normalize.css/
+-------------------------------------------------------------- */
+@import url("//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css");
+/* =fontface setup
+-------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
+/* =Typography
+-------------------------------------------------------------- */
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  color: #3c4d56;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+h1 {
+  font-size: 58px;
+  font-size: 3.625rem;
+  line-height: 60px;
+  line-height: 3.75rem;
+  margin: 0 0 1.25rem; }
+
+h2 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+  margin: 0 0 1.25rem 0; }
+
+h3 {
+  margin: 0 0 1.25rem 0; }
+
+h5 {
+  margin: 0; }
+
+p {
+  margin: 0 0 1.25rem; }
+
+/* =Content width
+-------------------------------------------------------------- */
+html .mceContentBody {
+  max-width: 605px; }
+
+/* =Wordpress Core Alignments
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }

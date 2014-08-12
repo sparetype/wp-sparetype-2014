@@ -3,17 +3,91 @@ Theme Name: SpareType2014
 Description: Used to style the TinyMCE editor.
 */
 
+/* =Variables
+-------------------------------------------------------------- */
+$brand-color1: #3C4D56; /* Dark grey blue */
+$brand-color2: #9CA5A9; /* Light grey */
+$brand-color3: #FEC34D; /* Yellow-orange */
+$brand-color4: #FFFFFF; /* White */
+
 
 /* =Normalize default browser CSS. Based on work by Nicolas Gallagher http://necolas.github.io/normalize.css/
 -------------------------------------------------------------- */
-@import url('//cdn.jsdelivr.net/normalize/2.1.0/normalize.css');
+@import url('//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css');
 
+
+/* =fontface setup
+-------------------------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
+
+
+/* =Typography
+-------------------------------------------------------------- */
+
+// =Variables for typography expressed in pixels
+
+$title-text: 58;
+$headline-text: 36;
+$subhead-text: 28;
+$primary-text: 22;
+$secondary-text: 17;
+$title-leading: 60;
+$headline-leading: 44;
+$primary-leading: 36;
+$secondary-leading: 27;
+
+
+// =Font size and line height mixin for pixels and rems
+
+@mixin font-size($fontsize: $primary-text, $lineheight: $primary-leading) {
+  font-size: $fontsize + px;
+  font-size: ($fontsize / 16) + rem;
+  line-height: $lineheight + px ;
+  line-height: ($lineheight /16) + rem ;
+}
+
+
+html {
+	font-size: 100%;
+}
+body {
+    @include font-size($primary-text,$primary-leading);
+    color: $brand-color1;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+}
+h1 {
+	@include font-size($title-text,$title-leading);
+	margin: 0 0 1.25rem;
+}
+h2 {
+	@include font-size($headline-text,$headline-leading);
+	margin: 0 0 1.25rem 0;
+}
+h3 {
+	margin: 0 0 1.25rem 0;
+}
+h4 {
+}
+h5 {
+	margin: 0;
+}
+h6 {
+}
+p {
+	margin: 0 0 1.25rem;
+}
+strong {
+}
+em {
+}
 
 
 /* =Content width
 -------------------------------------------------------------- */
 
-html .mceContentBody {max-width: 584px;}
+html .mceContentBody {max-width: 605px;}
 
 
 
