@@ -10,9 +10,8 @@ if ( ! isset( $content_width ) ) $content_width = 655;
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * @uses add_editor_style() To style the visual editor.
- * @uses add_theme_support() To add support for post thumbnails, automatic feed links, and Post Formats.
+ * @uses add_theme_support() To add support for post thumbnails, automatic feed links, Post Formats, and custom background.
  * @uses register_nav_menus() To add support for navigation menus.
- * @uses add_custom_background() To add support for a custom background.
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
  */
@@ -40,8 +39,8 @@ register_nav_menu( 'primary-navigation', 'Primary Navigation' );
 add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio'));
 
 // Add support for custom backgrounds
-add_custom_background();
-
+add_theme_support( 'custom-background' );
+	
 }
 
 add_action( 'after_setup_theme', 'sparetype_setup' );
