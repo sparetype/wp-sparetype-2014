@@ -133,10 +133,19 @@ column-gap: 72px;
 #footer .sidebar {display:inline-block; width:100%; margin: 0 0 72px;
 }
 
+#footer .sidebar .icon-link {
+    border: none;
+	margin: 0 36px 0 0;
+	transition: all 0.4s ease 0s;
+	fill: $brand-color4;
+}
+
+#footer .sidebar .icon-link:hover {
+		fill: $brand-color3;
+}
+
 #footer .sidebar .icon {
-    fill: #ffffff;
-    margin: 0 36px 0 0;
-    width: 48px;
+	    width: 48px;
 }
 
 article {
