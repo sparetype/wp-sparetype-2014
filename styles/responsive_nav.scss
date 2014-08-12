@@ -180,9 +180,10 @@ header.site-navigation {
   border-top: 1px solid white;
   color: white;
   float: left;
-  padding: 0.7rem 1.17rem 0.7rem 72px;
+  padding: 0.7rem 72px;
   text-decoration: none;
   width: 100%;
+	text-align: right;
 }
 
 .nav-collapse a {
@@ -254,7 +255,7 @@ header.site-navigation {
   color: #fff; /* Edit this to change the icon color */
   font-weight: 600;
   text-transform: none;
-  text-align: center;
+  text-align: right;
   position: absolute;
   content: "\2261\0000a0MENU"; /* Hamburger icon */
   text-indent: 0;
