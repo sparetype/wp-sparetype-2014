@@ -363,7 +363,8 @@ a:hover {
   line-height: 0;
   margin: 27px 72px;
   padding: 0;
-  width: 200px; }
+  width: 200px;
+  height: 55px; }
 
 #footer a:link {
   border-bottom: 1px dotted;
