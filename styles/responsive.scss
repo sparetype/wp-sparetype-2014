@@ -1,5 +1,15 @@
 /* Responsive ---------------------------- */
 
+@media screen and (max-width: 480px) {
+.page-content {
+    margin: 184px 0 0;
+	background-color: $brand-color4;
+	padding:36px;
+	border: none;
+}
+}
+
+
 @media screen and (min-width: 850px) {
 
 #navigation {
