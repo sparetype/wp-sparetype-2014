@@ -9,6 +9,12 @@
 }
 }
 
+@media screen and (min-width: 520px) {
+	.home-logo:link {
+	background: url(images/sparetype_logo.svg) 0 0 no-repeat;
+		width:200px;
+}
+}
 
 @media screen and (min-width: 850px) {
 

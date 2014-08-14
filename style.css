@@ -363,8 +363,9 @@ a:hover {
   line-height: 0;
   margin: 27px 72px;
   padding: 0;
-  width: 200px;
-  height: 55px; }
+  width: 55px;
+  height: 55px;
+  background: url(images/sparetype_logo_square.svg) 0 0 no-repeat; }
 
 #footer a:link {
   border-bottom: 1px dotted;
@@ -761,6 +762,11 @@ a.page-numbers, span.page-numbers {
     background-color: white;
     padding: 36px;
     border: none; } }
+@media screen and (min-width: 520px) {
+  .home-logo:link {
+    background: url(images/sparetype_logo.svg) 0 0 no-repeat;
+  		width:260px;
+} }
 @media screen and (min-width: 850px) {
   .loop-content {
     -moz-column-count: 2;

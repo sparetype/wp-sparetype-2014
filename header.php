@@ -56,7 +56,7 @@
 
 
 	<header id="site-navigation" class="site-navigation">
-	<a href="<?php echo home_url(); ?>" class="home-logo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/st_sparetype_logo_white.svg" /></a>
+	<a href="<?php echo home_url(); ?>" class="home-logo">SpareType</a>
 		
 	<nav class="nav-collapse">
 
