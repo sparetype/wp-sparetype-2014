@@ -361,7 +361,7 @@ a:hover {
   display: inline-block;
   font-size: 0;
   line-height: 0;
-  margin: 27px 72px;
+  margin: 27px 36px;
   padding: 0;
   width: 55px;
   height: 55px;
@@ -758,15 +758,15 @@ a.page-numbers, span.page-numbers {
 /* Responsive ---------------------------- */
 @media screen and (max-width: 480px) {
   .page-content {
-    margin: 184px 0 0;
+    margin: 166px 0 0;
     background-color: white;
-    padding: 36px;
+    padding: 0 36px;
     border: none; } }
 @media screen and (min-width: 520px) {
   .home-logo:link {
     background: url(images/sparetype_logo.svg) 0 0 no-repeat;
-  		width:260px;
-} }
+    width: 200px;
+    margin: 27px 72px; } }
 @media screen and (min-width: 850px) {
   .loop-content {
     -moz-column-count: 2;

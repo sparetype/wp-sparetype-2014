@@ -2,9 +2,9 @@
 
 @media screen and (max-width: 480px) {
 .page-content {
-    margin: 184px 0 0;
+    margin: 166px 0 0;
 	background-color: $brand-color4;
-	padding:36px;
+	padding:0 36px;
 	border: none;
 }
 }
@@ -13,6 +13,7 @@
 	.home-logo:link {
 	background: url(images/sparetype_logo.svg) 0 0 no-repeat;
 		width:200px;
+		  margin: 27px 72px;
 }
 }
 
