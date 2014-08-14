@@ -9,6 +9,16 @@
 }
 }
 
+@media screen and (min-width: 700px) {
+
+.single-content {
+    margin: 184px 72px 0;
+	background-color: $brand-color4;
+border: 2px solid $brand-color1;
+	padding:36px;
+}
+}
+
 @media screen and (min-width: 520px) {
 	.home-logo:link {
 	background: url(images/sparetype_logo.svg) 0 0 no-repeat;
