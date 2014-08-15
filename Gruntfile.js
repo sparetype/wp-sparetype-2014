@@ -4,8 +4,8 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 	uglify: {
 	build: {
-	src: 'src/script.js',
-	dest: 'build/script.min.js'
+	src: 'scripts/**/*.js',
+	dest: 'sparetype2014/scripts/-responsive-nav.js'
 	}
 	}
 	});
