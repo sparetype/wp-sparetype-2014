@@ -1,3 +1,6 @@
-# ignore Codio settings and Sass compiler
+# ignore Sass compiler
 .sass-cache
+# ignore Codio settings
 .settings
+# ignore node modules
+node_modules
