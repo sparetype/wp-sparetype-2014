@@ -14,11 +14,22 @@ module.exports = function(grunt) {
                 src: 'scripts/production.js',
                 dest: 'sparetype2014/scripts/production.min.js'
             }
+        },
+        sass: {
+            build: {
+                options: {
+                    style: 'compressed'
+                },
+                files: {
+                    'sparetype2014/style.css': 'styles/style.scss'
+                }
+            }
         }
     });
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     // Default tasks.
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
 };
