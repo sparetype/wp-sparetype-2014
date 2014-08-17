@@ -40,13 +40,7 @@
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-<?php wp_enqueue_script( 'responsive-nav', get_template_directory_uri().'/scripts/responsive-nav.min.js', array(), '', false ); ?>
-
-<?php wp_enqueue_script( 'fastclick', get_template_directory_uri().'/scripts/fastclick.js', array(), '', true ); ?>
-	
-<?php wp_enqueue_script( 'scroll', get_template_directory_uri().'/scripts/scroll.js', array(), '', true ); ?>
-	
-<?php wp_enqueue_script( 'fixed-responsive-nav', get_template_directory_uri().'/scripts/fixed-responsive-nav.js', array(), '', true ); ?>
+<?php wp_enqueue_script( 'production', get_template_directory_uri().'/scripts/production.min.js', array(), '', true ); ?>
 	
 <?php wp_head(); ?>
 
