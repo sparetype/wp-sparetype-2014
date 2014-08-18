@@ -149,3 +149,14 @@ a:active {
   position: relative;
   top: 10px;
 }
+
+
+/* For Link Indication plugin
+-------------------------------------------------------------- */
+a.link_external { padding-right: 15px; background: url(images/link-icon_external.gif) no-repeat right; }
+a.link_wikipedia { padding-right: 13px; background: url(images/link-icon_wikipedia.gif) no-repeat right; }
+a.link_wp { padding-right: 16px; background: url(images/link-icon_wordpress.png) no-repeat right; }
+a.link_ftp { padding-right: 13px; background: url(images/link-icon_ftp.png) no-repeat right; }
+a.link_mailto { padding-right: 18px; background: url(images/link-icon_mail.gif) no-repeat right; }
+a.link_pdf { padding-right: 15px; background: url(images/link-icon_pdf.png) no-repeat right;  }
+a.link_zip { padding-right: 15px; background: url(images/link-icon_zip.png) no-repeat right;  }
