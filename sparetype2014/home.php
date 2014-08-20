@@ -25,9 +25,9 @@ get_header(); ?>
     <?php if ( has_post_thumbnail() ) {the_post_thumbnail('excerpt-square');} ?>
 	
 	<section>
-	<h2 class="entry-title"><a href="<?php echo get_the_content(); ?>" title="<?php printf( esc_attr__( 'Link to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+	<h2 class="entry-title"><a href="<?php echo get_the_excerpt(); ?>" title="<?php printf( esc_attr__( 'Link to %s' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 	
-	<?php the_excerpt(); ?>
+	<?php the_content(); ?>
 	</section>
 	</article>
 	
