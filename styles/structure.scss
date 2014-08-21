@@ -75,6 +75,16 @@ column-gap: 72px;
   padding: 6px 36px 9px;
 }
 
+.loop-content article.format-link {
+	border: 2px solid $brand-color2;
+
+}
+.loop-content .format-link .entry-meta {
+  background-color: $brand-color2;
+  color: $brand-color4;
+  padding: 6px 36px 9px;
+}
+
 .loop-content section {
 padding:36px;}
 

@@ -19,7 +19,7 @@ get_header(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class('grid'); ?>>
 	
 	<header class="entry-meta">
-	<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
+	<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> -- LINK</p>
 	</header><!-- #entry-meta -->
 
     <?php if ( has_post_thumbnail() ) {the_post_thumbnail('excerpt-square');} ?>
@@ -36,7 +36,7 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid'); ?>>
     
 	<header class="entry-meta">
-<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></p>
+<p class="date-posted"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> -- POST</p>
 </header><!-- #entry-meta -->
 	
     <?php if ( has_post_thumbnail() ) {the_post_thumbnail('excerpt-square');} ?>
