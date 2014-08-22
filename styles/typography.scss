@@ -60,6 +60,12 @@ strong {
 }
 em {
 }
+pre {
+    @include font-size($secondary-text,$secondary-leading);
+    overflow-x: auto;
+    padding: 1rem 1rem 1rem 2rem;
+    white-space: pre;
+}
 #navigation {
 }
 #content {

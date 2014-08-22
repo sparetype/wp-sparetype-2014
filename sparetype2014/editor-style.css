@@ -49,6 +49,16 @@ h5 {
 
 p {
   margin: 0 0 1.25rem; }
+  
+pre {
+    font-size:17px;
+	font-size:1.0625rem;
+	line-height:27px;
+	line-height:1.6875rem;
+	overflow-x:auto;
+	padding:1rem 1rem 1rem 2rem;
+	white-space:pre;
+}
 
 /* =Content width
 -------------------------------------------------------------- */
