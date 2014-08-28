@@ -1,10 +1,12 @@
 .searchform {
   color: $brand-color1;
 }
+
 .searchform .textbox {
-width: 100%;
-margin: 0;
-padding: 0 5px;}
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+}
 
 .searchform #s {
   margin: 0 0 0.75rem;
@@ -13,7 +15,17 @@ padding: 0 5px;}
 }
 
 .searchform #searchsubmit {
-width: 50%;
-margin: 0;
-padding: 0;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.search-title .query {
+  color: $brand-color3;
+}
+
+.search-content article {
+  border-bottom: 2px solid $brand-color2;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }

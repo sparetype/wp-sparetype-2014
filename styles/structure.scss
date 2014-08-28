@@ -71,11 +71,12 @@ column-gap: 72px;
 .loop-content section {
 padding:36px;}
 
-.page-content {
-    margin: 184px 72px 0;
-	background-color: $brand-color4;
-border: 2px solid $brand-color1;
-	padding:36px;
+.page-content,
+.search-content {
+  margin: 184px 72px 0;
+  background-color: $brand-color4;
+  border: 2px solid $brand-color1;
+  padding:36px;
 }
 
 .single-content {
