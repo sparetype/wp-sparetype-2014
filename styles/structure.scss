@@ -72,7 +72,8 @@ column-gap: 72px;
 padding:36px;}
 
 .page-content,
-.search-content {
+.search-content,
+.project-content {
   margin: 184px 72px 0;
   background-color: $brand-color4;
   border: 2px solid $brand-color1;
@@ -121,15 +122,11 @@ body.blog #content {
   z-index: 3;
   width: 100%;
   border-top: 9px solid $brand-color3;
-	-moz-column-count: 1;
--moz-column-gap: 72px;
--webkit-column-count: 1;
--webkit-column-gap: 72px;
-column-count: 1;
-column-gap: 72px;
-	color: #FFFFFF;
-    margin: 72px 0 0;
-    padding: 36px 72px;
+  column-count: 1;
+  column-gap: 72px;
+  color: $brand-color4;
+  margin: 72px 0 0;
+  padding: 36px 72px;
 }
 #footer .sidebar {display:inline-block; width:100%; margin: 0 0 72px;
 }

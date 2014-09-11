@@ -1,5 +1,30 @@
 /* =WordPress Gallery
 -------------------------------------------------------------- */
 
+.gallery {
+}
+.gallery-item {
+    display: inline-block;
+	width: 100%;
+}
+.gallery-columns-0 .gallery-item {
+    width: 100%;
+}
+.gallery-columns-1 .gallery-item {
+    width: 100%;
+}
+.gallery-columns-2 {
+    column-count: 2;
+	column-gap: 36px;
+}
+.gallery-columns-3 .gallery-item {
+    width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+    width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+    width: 20%;
+}
 .gallery-caption {
 }

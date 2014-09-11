@@ -24,12 +24,18 @@ module.exports = function(grunt) {
                     'sparetype2014/style.css': 'styles/style.scss'
                 }
             }
+        },
+		autoprefixer: {
+            build: {
+                src: 'sparetype2014/style.css'
+            }
         }
     });
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     // Default tasks.
-    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer']);
 };

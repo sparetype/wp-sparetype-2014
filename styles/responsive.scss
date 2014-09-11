@@ -2,7 +2,8 @@
 
 @media screen and (max-width: 480px) {
 .page-content,
-.search-content {
+.search-content,
+.project-content {
     margin: 166px 0 0;
 	background-color: $brand-color4;
 	padding:0 36px;
@@ -37,15 +38,8 @@ border: 2px solid $brand-color1;
 }
 	
 .loop-content {
--moz-column-count: 2;
--webkit-column-count: 2;
-column-count: 2;
+	column-count: 2;
 	max-width:800px;
-}
-
-.project-content {
-  margin: 160px 0;
-  padding: 0 8%;
 }
 
 }
@@ -53,7 +47,8 @@ column-count: 2;
 @media screen and (min-width: 1040px) {
 	
 .page-content,
-.search-content {
+.search-content,
+.project-content {
   max-width: 700px;
 }
 
@@ -63,9 +58,9 @@ column-count: 2;
 	
 article:first-child {
 }
-	#footer {
-	-moz-column-count: 2;
--webkit-column-count: 2;
-column-count: 2;
+
+#footer {
+	column-count: 2;
 }
+
 }
