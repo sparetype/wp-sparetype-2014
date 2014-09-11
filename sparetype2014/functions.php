@@ -192,6 +192,10 @@ add_action('pre_get_posts','sparetype_project_post_type_loop');
 define('SOCIAL_COMMENTS_CSS', get_stylesheet_directory_uri().'/styles/social_plugin_custom_stylesheet.css');
 
 
+// Clear default wordpress gallery styles
+
+add_filter( 'use_default_gallery_style', '__return_false' );
+
 
 // Register multiple featured images
 
