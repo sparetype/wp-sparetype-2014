@@ -31,7 +31,7 @@
 <meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri(); ?>/favicon/mstile-144x144.png">
 
 
-<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+<title><?php wp_title('&laquo;', true, 'right'); ?></title>
 
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
