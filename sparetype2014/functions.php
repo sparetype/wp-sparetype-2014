@@ -188,17 +188,6 @@ add_action('pre_get_posts','sparetype_project_post_type_loop');
 
 
 
-// Include projects in main RSS feed
-
-function sparetype_project_feed_request($qv) {
-	if (isset($qv[' feed ']) && !isset($qv[' post_type ']))
-		$qv[' post_type '] = array(' post ', ' sparetype_project ');
-	return $qv;
-}
-add_filter(' request ', ' sparetype_project_feed_request ');
-
-
-
 
 // Social plugin by Mailchimp overrides
 
