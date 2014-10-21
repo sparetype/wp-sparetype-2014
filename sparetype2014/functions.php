@@ -188,7 +188,6 @@ add_action('pre_get_posts','sparetype_project_post_type_loop');
 
 
 
-
 // Social plugin by Mailchimp overrides
 
 define('SOCIAL_COMMENTS_CSS', get_stylesheet_directory_uri().'/styles/social_plugin_custom_stylesheet.css');
