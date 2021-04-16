@@ -17,6 +17,7 @@ $brand-color1: #3C4D56; /* Dark grey blue */
 $brand-color2: #9CA5A9; /* Light grey */
 $brand-color3: #FEC34D; /* Yellow-orange */
 $brand-color4: #FFFFFF; /* White */
+$brand-color5: #F9F9F9; /* Very light grey */
 
 
 /* =Normalize default browser CSS. Based on work by Nicolas Gallagher http://necolas.github.io/normalize.css/
@@ -26,7 +27,7 @@ $brand-color4: #FFFFFF; /* White */
 
 /* =fontface setup
 -------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
 
 
 /* =Gridism - responsive CSS grid by @cobyism

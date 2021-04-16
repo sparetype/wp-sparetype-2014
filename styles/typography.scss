@@ -23,7 +23,6 @@ $secondary-leading: 27;
   line-height: ($lineheight /16) + rem ;
 }
 
-
 html {
 	font-size: 100%;
 }
@@ -31,6 +30,10 @@ body {
     @include font-size($primary-text,$primary-leading);
     color: $brand-color1;
 	font-family: 'Source Sans Pro', sans-serif;
+	word-break: break-word;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+
 }
 h1, h2, h3, h4, h5, h6 {
 }
@@ -64,6 +67,12 @@ pre {
     overflow-x: auto;
     padding: 1rem 1rem 1rem 2rem;
     white-space: pre;
+}
+blockquote {
+	border-left: 2px solid $brand-color1;
+	margin-left: 36px;
+	padding: 18px;
+	background-color: $brand-color5;
 }
 #navigation {
 }
@@ -147,13 +156,6 @@ a:active {
 
 /* =Images inside links
 -------------------------------------------------------------- */
-.project-content a img,
-.page-content a img,
-.loop-content a img,
-.single-content a img, {
-  position: relative;
-  top: 10px;
-}
 
 
 /* For Link Indication plugin
