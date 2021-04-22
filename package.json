@@ -3,10 +3,13 @@
   "description": "sparetype processing",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-concat": "~0.5.0",
-    "grunt-contrib-uglify": "~0.5.1",
-    "grunt-contrib-sass": "~0.7.4",
-    "grunt-autoprefixer": "~1.0.1"
+    "grunt": "~1.0.0",
+    "grunt-autoprefixer": "~3.0.0",
+    "grunt-contrib-concat": "~1.0.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "~5.0.0",
+    "grunt-dart-sass": "^2.0.1",
+    "grunt-sass": "^3.1.0",
+    "sass": "^1.32.11"
   }
 }

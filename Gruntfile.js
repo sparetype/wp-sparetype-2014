@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
     // Project configuration.
-    grunt.initConfig({
+    const sass = require('sass');
+	grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             dist: {
@@ -16,14 +17,15 @@ module.exports = function(grunt) {
             }
         },
         sass: {
-            build: {
                 options: {
-                    style: 'compressed'
+                    implementation: sass,
+					outputStyle: 'compressed'
                 },
-                files: {
-                    'sparetype2014/style.css': 'styles/style.scss'
-                }
-            }
+                dist: {
+					files: {
+						'sparetype2014/style.css': 'styles/style.scss'
+					}
+				}
         },
 		autoprefixer: {
             build: {
@@ -34,8 +36,8 @@ module.exports = function(grunt) {
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-sass');
     // Default tasks.
     grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer']);
 	grunt.registerTask('css', ['sass', 'autoprefixer']);

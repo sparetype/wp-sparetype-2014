@@ -3,55 +3,65 @@
 
 // =Variables for typography expressed in pixels
 
-$title-text: 58;
-$headline-text: 36;
-$subhead-text: 28;
-$primary-text: 22;
+$primary-text: 18;
+$primary-leading: 1.618;
+$scaler: 1.618;
+
+$subhead-text: ($primary-text * $scaler);
+$headline-text: ($subhead-text * $scaler);
+$title-text: ($headline-text * $scaler);
+$header-leading: 1.1;
+
 $secondary-text: 17;
 $title-leading: 60;
 $headline-leading: 44;
-$primary-leading: 36;
 $secondary-leading: 27;
-
 
 // =Font size and line height mixin for pixels and rems
 
 @mixin font-size($fontsize: $primary-text, $lineheight: $primary-leading) {
   font-size: $fontsize + px;
   font-size: ($fontsize / 16) + rem;
-  line-height: $lineheight + px ;
-  line-height: ($lineheight /16) + rem ;
+// font-size: calc(#{$fontsize * .88 + px} + (#{$fontsize * 1.16} - #{$fontsize * .88}) * ((100vw - 1px) / (850 - 1)));
+// font-size: clamp(#{$fontsize * .88 + px}, 1rem + 2vw, #{$fontsize * 1.16 + px});
+  line-height: $lineheight;
 }
 
 html {
 	font-size: 100%;
 }
 body {
-    @include font-size($primary-text,$primary-leading);
-    color: $brand-color1;
+	color: $brand-color1;
 	font-family: 'Source Sans Pro', sans-serif;
 	word-break: break-word;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-
+    line-height: $primary-leading;
 }
 h1, h2, h3, h4, h5, h6 {
+	line-height: $header-leading;
+	margin: 0 0 1.25rem 0;
+}
+h1, h2, h3, h4 {
+	font-weight: 900;
+}
+h5, h6 {
+	font-weight: 600;
 }
 h1 {
-	@include font-size($title-text,$title-leading);
-	margin: 0 0 1.25rem;
 }
 h2 {
-	@include font-size($headline-text,$headline-leading);
-	margin: 0 0 1.25rem 0;
 }
 h3 {
-	margin: 0 0 1.25rem 0;
+}
+h4, h5, h6 {
+	letter-spacing: 1.25px;
 }
 h4 {
+	text-transform: uppercase;
 }
 h5 {
-	margin: 0;
+	text-transform: uppercase;
 }
 h6 {
 }
@@ -63,14 +73,14 @@ strong {
 em {
 }
 pre {
-    @include font-size($secondary-text,$secondary-leading);
+    @include font-size($secondary-text,$primary-leading);
     overflow-x: auto;
     padding: 1rem 1rem 1rem 2rem;
     white-space: pre;
 }
 blockquote {
 	border-left: 2px solid $brand-color1;
-	margin-left: 36px;
+	margin: 0 0 1.25rem;
 	padding: 18px;
 	background-color: $brand-color5;
 }
@@ -84,7 +94,7 @@ blockquote {
 .date-posted,
 .cat-links,
 .tag-links,{
-    @include font-size($secondary-text,$secondary-leading);
+    @include font-size($secondary-text,$primary-leading);
 	margin: 0;
 	font-weight: 600;
 	text-transform: lowercase;
@@ -93,10 +103,10 @@ blockquote {
 	text-transform: uppercase;
 }
 .form-allowed-tags {
-        @include font-size($secondary-text,$secondary-leading);
+    @include font-size($secondary-text,$primary-leading);
 }
 .screen-reader-text {
-  display: none;
+	display: none;
 }
 
 
@@ -105,23 +115,28 @@ blockquote {
 -------------------------------------------------------------- */
 
 a:link {
-	border-bottom: 1px dotted;
-	color: $brand-color1;
-	padding-bottom: 1px;
-	text-decoration: none;
+//	border-bottom: 1px dotted;
+//	padding-bottom: 1px;
+    color: $brand-color1;
+	text-decoration-color: currentColor;
+    text-decoration-thickness: .1ex;
+	text-underline-offset: .25ex;
     transition: all 0.4s;
 }
 a:visited {
-	color: $brand-color1;
+	color: $visited-link;
 }
 a:hover {
 	color: $brand-color3;
     transition: all 0.4s;
 }
 a:active {
+	color: $active-link;
 }
-.entry-title > a {
-	border: medium none;
+a:focus {
+}
+.single-content .entry-title > a {
+	text-decoration: none;
 }
 
 .home-logo:link {
@@ -132,15 +147,15 @@ a:active {
   margin: 27px 36px;
   padding: 0;
   width: 55px;
-	height: 55px;
-	background: url(images/sparetype_logo_square.svg) 0 0 no-repeat;
+  height: 55px;
+  background: url(images/sparetype_logo_square.svg) 0 0 no-repeat;
 }
 
 #footer a:link {
-	border-bottom: 1px dotted;
 	color: $brand-color4;
-	padding-bottom: 1px;
-	text-decoration: none;
+	text-decoration-color: currentColor;
+    text-decoration-thickness: .1ex;
+	text-underline-offset: .25ex;
     transition: all 0.4s;
 }
 #footer a:visited {
@@ -151,6 +166,7 @@ a:active {
     transition: all 0.4s;
 }
 #footer a:active {
+	color: $active-link;
 }
 
 

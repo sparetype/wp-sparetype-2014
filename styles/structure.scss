@@ -35,9 +35,9 @@ body {
 
 
 .loop-content {
-margin: 184px 72px 18px;
-column-count: 1;
-column-gap: 72px;
+	margin: 184px 36px 18px;
+	column-count: 1;
+	column-gap: 72px;
 }
 
 .loop-content article {
@@ -66,21 +66,22 @@ column-gap: 72px;
 }
 
 .loop-content section {
-padding:36px;}
+	padding:36px;
+}
 
 .page-content,
 .search-content,
 .project-content {
-  margin: 184px 72px 0;
-  background-color: $brand-color4;
-  border: 2px solid $brand-color1;
-  padding:36px;
+    margin: 172px 0 0;
+	background-color: $brand-color4;
+	padding:0 36px;
+	border: none;
 }
 
 .single-content {
-    margin: 148px 0 0;
+    margin: 154px 0 0;
 	background-color: $brand-color4;
-	padding:36px;
+	padding: 0 36px;
 }
 
 .single-content article {
@@ -124,7 +125,7 @@ body.blog #content {
   column-gap: 72px;
   color: $brand-color4;
   margin: 72px 0 0;
-  padding: 36px 72px;
+  padding: 36px;
 }
 #footer .sidebar {display:inline-block; width:100%; margin: 0 0 72px;
 }

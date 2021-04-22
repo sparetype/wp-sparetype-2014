@@ -1,6 +1,19 @@
 /* =Comments
 -------------------------------------------------------------- */
 
+// Comment Form
+
+.comment-form-comment label {
+	display: block;
+}
+
+.comment-form-comment textarea {
+	width: 100%;
+}
+
+
+// Comment List
+
 ol.commentlist {
     @include font-size($secondary-text,$secondary-leading);
 	list-style: none;
