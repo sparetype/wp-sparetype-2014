@@ -28,7 +28,7 @@ $active-link: #784444; /* Desaturated red */
 
 /* =fontface setup
 -------------------------------------------------------------- */
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900,300italic,600italic&display=swap);
 
 
 /* =Gridism - responsive CSS grid by @cobyism
@@ -63,12 +63,7 @@ $active-link: #784444; /* Desaturated red */
 
 /* =Forms and Inputs
 -------------------------------------------------------------- */
-input[type=text], input[type=text]:hover, input[type=text]:focus, input[type=text]:active {
-	border: 1px solid $brand-color2;
-	border-radius: 0;
-	outline: none;
-	outline-offset: 0;
-}
+@import "forms";
 
 
 /* =Wordpress Core Alignments
