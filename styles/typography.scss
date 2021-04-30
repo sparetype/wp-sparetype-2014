@@ -1,34 +1,28 @@
 /* =Typography
 -------------------------------------------------------------- */
-
-// =Variables for typography expressed in pixels
-
-$primary-text: 18;
-$primary-leading: 1.618;
-$scaler: 1.618;
-
-$subhead-text: ($primary-text * $scaler);
-$headline-text: ($subhead-text * $scaler);
-$title-text: ($headline-text * $scaler);
-$header-leading: 1.1;
-
-$secondary-text: 17;
-$title-leading: 60;
-$headline-leading: 44;
-$secondary-leading: 27;
-
-// =Font size and line height mixin for pixels and rems
-
-@mixin font-size($fontsize: $primary-text, $lineheight: $primary-leading) {
-  font-size: $fontsize + px;
-  font-size: ($fontsize / 16) + rem;
-// font-size: calc(#{$fontsize * .88 + px} + (#{$fontsize * 1.16} - #{$fontsize * .88}) * ((100vw - 1px) / (850 - 1)));
-// font-size: clamp(#{$fontsize * .88 + px}, 1rem + 2vw, #{$fontsize * 1.16 + px});
-  line-height: $lineheight;
-}
-
 html {
 	font-size: 100%;
+}
+body {
+	@include fluid-font-size($body-copy-min, $body-copy-max, $primary-leading);
+}
+h1 {
+	@include fluid-font-size($h1-min, $h1-max, $header-leading);
+}
+h2 {
+	@include fluid-font-size($h2-min, $h2-max, $header-leading);
+}
+h3 {
+	@include fluid-font-size($h3-min, $h3-max, $header-leading);
+}
+h4 {
+	@include fluid-font-size($h4-min, $h4-max, $header-leading);
+}
+h5 {
+	@include fluid-font-size($h5-min, $h5-max, $header-leading);
+}
+h6 {
+	@include fluid-font-size($h6-min, $h6-max, $header-leading);
 }
 body {
 	color: $brand-color1;
@@ -36,10 +30,8 @@ body {
 	word-break: break-word;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-    line-height: $primary-leading;
 }
 h1, h2, h3, h4, h5, h6 {
-	line-height: $header-leading;
 	margin: 0 0 1.25rem 0;
 }
 h1, h2, h3, h4 {
@@ -73,7 +65,7 @@ strong {
 em {
 }
 pre {
-    @include font-size($secondary-text,$primary-leading);
+	@include fluid-font-size($secondary-min, $secondary-max, $primary-leading);
     overflow-x: auto;
     padding: 1rem 1rem 1rem 2rem;
     white-space: pre;
@@ -100,7 +92,7 @@ blockquote {
 .date-posted,
 .cat-links,
 .tag-links,{
-    @include font-size($secondary-text,$primary-leading);
+	@include fluid-font-size($secondary-min, $secondary-max, $primary-leading);
 	margin: 0;
 	font-weight: 600;
 	text-transform: lowercase;
@@ -109,7 +101,7 @@ blockquote {
 	text-transform: uppercase;
 }
 .form-allowed-tags {
-    @include font-size($secondary-text,$primary-leading);
+	@include fluid-font-size($secondary-min, $secondary-max, $primary-leading);
 }
 .screen-reader-text {
 	display: none;

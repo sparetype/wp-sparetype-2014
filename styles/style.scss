@@ -36,6 +36,16 @@ $active-link: #784444; /* Desaturated red */
 //@import "grid";
 
 
+/* =Variable
+-------------------------------------------------------------- */
+@import "variables";
+
+
+/* =Mixins
+-------------------------------------------------------------- */
+@import "mixins";
+
+
 /* =Structure
 -------------------------------------------------------------- */
 @import "structure";
@@ -173,7 +183,7 @@ a img.aligncenter {
 	background: $brand-color4;
 }
 a.page-numbers, span.page-numbers {
-	@include font-size($primary-text,$primary-leading);
+	@include fluid-font-size($body-copy-min, $body-copy-max, $primary-leading);
     border: 2px solid $brand-color1;
 	margin: 0.5%;
 	padding: 0.85% 1.5%;
