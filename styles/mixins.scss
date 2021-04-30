@@ -8,23 +8,29 @@
 	font-size: ($mx-minFontSize / 16) + rem;
 	line-height: $mx-lineHeight;
 
-	@media (min-width: $viewport-min + px) {
+	@media screen and (min-width: $viewport-min + px) {
 		font-size: calc( #{$mx-minFontSize}px + (#{$mx-maxFontSize} - #{$mx-minFontSize}) * ( (100vw - #{$viewport-min}px) / ( #{$viewport-max} - #{$viewport-min}) ));
 		min-height: 0vw;
 	}
 
-	@media (min-width: $viewport-max + px) {
+	@media screen and (min-width: $viewport-max + px) {
 		font-size: $mx-maxFontSize + px;
 		font-size: ($mx-maxFontSize / 16) + rem;		
 	}
 }
 
+
 // Font size and line height mixin for pixels and rems
-@mixin fluid-filler($mx-minFiller: 8vw, $mx-maxFiller: 72px) {
+@mixin fluid-spacing($mx-direction: top, $mx-minSpacing: 16, $mx-maxSpacing: 72) {
 
-	margin-left: $mx-minFiller;
+	margin-#{$mx-direction}: $mx-minSpacing + px;
 
-	@media (min-width: 900px) {
-		margin-left: $mx-maxFiller;		
+	@media screen and (min-width: $viewport-min + px) {
+		margin-#{$mx-direction}: calc( #{$mx-minSpacing}px + (#{$mx-maxSpacing} - #{$mx-minSpacing}) * ( (100vw - #{$viewport-min}px) / ( #{$viewport-max} - #{$viewport-min}) ));
+		min-height: 0vw;
+	}
+
+	@media screen and (min-width: $viewport-max + px) {
+		margin-#{$mx-direction}: $mx-maxSpacing + px;
 	}
 }

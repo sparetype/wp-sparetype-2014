@@ -8,21 +8,9 @@
 	.home-logo:link {
 		background: url(images/sparetype_logo.svg) 0 0 no-repeat;
 		width: 200px;
-		margin: 27px 72px;
 	}
 	.loop-content {
 		margin: 184px 72px 18px;
-	}
-	.single-content {
-		padding: 0 72px;
-	}
-	.page-content,
-	.search-content,
-	.project-content {
-		margin: 172px 72px 0;
-		background-color: $brand-color4;
-		border: 2px solid $brand-color1;
-		padding: 36px;
 	}
 	#footer {
 		padding: 36px 72px;
@@ -31,9 +19,6 @@
 
 @media screen and (min-width: 700px) {
 
-	.single-content {
-		background-color: $brand-color4;
-	}
 }
 
 @media screen and (min-width: 850px) {
@@ -57,7 +42,6 @@
 
 .single-content {
   max-width: 800px;
-  margin: 172px 0 0;
 }
 
 }
