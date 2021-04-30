@@ -1,0 +1,56 @@
+/* =Variables and mixins
+-------------------------------------------------------------- */
+
+// Colors
+$brand-color1: #3C4D56; /* Dark grey blue */
+$brand-color2: #9CA5A9; /* Light grey */
+$brand-color3: #FEC34D; /* Yellow-orange */
+$brand-color4: #FFFFFF; /* White */
+$brand-color5: #F9F9F9; /* Very light grey */
+$visited-link: #816490; /* Desaturated purple */
+$active-link: #784444; /* Desaturated red */
+
+
+// Typography expressed in pixels
+$body-copy-max: 20;
+$secondary-max: 17;
+$caption-max: 14;
+$h6-max: 16;
+$h5-max: 16;
+$h4-max: 20;
+$h3-max: 32;
+$h2-max: 48;
+$h1-max: 64;
+
+$body-copy-min: 14;
+$secondary-min: 15;
+$caption-min: 12;
+$h6-min: 16;
+$h5-min: 16;
+$h4-min: 18;
+$h3-min: 18;
+$h2-min: 24;
+$h1-min: 32;
+
+$primary-leading: 1.618;
+$header-leading: 1.1;
+$vertical-rhythem: 20; 
+
+
+// Viewports expressed in pixels
+$viewport-min: 1;
+$viewport-max: 850;
+
+
+
+$primary-text: 18;
+$scaler: 1.618;
+
+$subhead-text: ($primary-text * $scaler);
+$headline-text: ($subhead-text * $scaler);
+$title-text: ($headline-text * $scaler);
+
+$secondary-text: 17;
+$title-leading: 60;
+$headline-leading: 44;
+$secondary-leading: 27;

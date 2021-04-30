@@ -1,0 +1,30 @@
+/* = Mixins
+-------------------------------------------------------------- */
+
+// Font size and line height mixin for pixels and rems
+@mixin fluid-font-size($mx-minFontSize: $body-copy-min, $mx-maxFontSize: $body-copy-max, $mx-lineHeight: $primary-leading) {
+
+	font-size: $mx-minFontSize + px;
+	font-size: ($mx-minFontSize / 16) + rem;
+	line-height: $mx-lineHeight;
+
+	@media (min-width: $viewport-min + px) {
+		font-size: calc( #{$mx-minFontSize}px + (#{$mx-maxFontSize} - #{$mx-minFontSize}) * ( (100vw - #{$viewport-min}px) / ( #{$viewport-max} - #{$viewport-min}) ));
+		min-height: 0vw;
+	}
+
+	@media (min-width: $viewport-max + px) {
+		font-size: $mx-maxFontSize + px;
+		font-size: ($mx-maxFontSize / 16) + rem;		
+	}
+}
+
+// Font size and line height mixin for pixels and rems
+@mixin fluid-filler($mx-minFiller: 8vw, $mx-maxFiller: 72px) {
+
+	margin-left: $mx-minFiller;
+
+	@media (min-width: 900px) {
+		margin-left: $mx-maxFiller;		
+	}
+}
