@@ -15,6 +15,7 @@ input:active {
 	padding: 0.5rem 0.75rem 0.7rem;
 	width: 100%;
 	box-shadow: none;
+	caret-color: $brand-color3;
 }
 
 textarea {
@@ -23,6 +24,7 @@ textarea {
 	padding: 0.5rem 0.75rem 0.7rem;
 	width: 100%;
 	box-shadow: none;
+	caret-color: $brand-color3;
 }
 
 button[type="submit"] {
@@ -31,6 +33,19 @@ button[type="submit"] {
 	padding: 1rem;
 	width: 100%;
 }
+
+.mauticform-row.mauticform-required .mauticform-label:after {
+	content: " *";
+	color: $active-link;
+	display: inline;
+}
+
+.mauticform-errormsg {
+	color: $active-link;
+	display: block;
+	margin-top: 2px;
+}
+
 
 /* .mauticform_wrapper {
         max-width: 600px;

@@ -84,6 +84,12 @@ blockquote {
 	padding: 18px;
 	background-color: $brand-color5;
 }
+::-moz-selection {
+  background-color: scale-color($brand-color3, $lightness: 50%,);
+}
+::selection {
+  background-color: scale-color($brand-color3, $lightness: 50%,);
+}
 #navigation {
 }
 #content {
