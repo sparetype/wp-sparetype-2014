@@ -26,10 +26,10 @@ add_theme_support( 'automatic-feed-links' );
 
 // This theme uses Featured Images (also known as post thumbnails) for excerpts
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 440, 440, true );
+set_post_thumbnail_size( 500, 500, true );
 
 // Add custom image sizes for featured images
-add_image_size( 'excerpt-square', 440, 440, true );
+add_image_size( 'excerpt-square', 500, 500, true );
 add_image_size( 'header-single', 880, 440, true );
 
 // This theme uses wp_nav_menu() in one location.
@@ -185,12 +185,6 @@ function sparetype_project_post_type_loop($query) {
 
 add_action('pre_get_posts','sparetype_project_post_type_loop');
 
-
-
-
-// Social plugin by Mailchimp overrides
-
-define('SOCIAL_COMMENTS_CSS', get_stylesheet_directory_uri().'/styles/social_plugin_custom_stylesheet.css');
 
 
 // Clear default wordpress gallery styles

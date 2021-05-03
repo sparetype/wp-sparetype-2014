@@ -53,12 +53,12 @@ body {
 }
 
 .loop-content article {
-        display: inline-block;
-        margin-bottom: 72px;
-        width: 100%;
+    display: inline-block;
+    margin-bottom: 72px;
 	background-color: $brand-color4;
 	border: 2px solid $brand-color1;
-
+    width: 100%;
+	max-width: 500px;
 }
 .loop-content .entry-meta {
   background-color: $brand-color1;
@@ -69,7 +69,6 @@ body {
 
 .loop-content article.format-link {
 	border: 2px solid $brand-color2;
-
 }
 .loop-content .format-link .entry-meta {
   background-color: $brand-color2;

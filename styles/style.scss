@@ -84,12 +84,23 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+figure {
+	margin: 0 0 1.25rem 0;
+}
+figcaption {
+	margin: 0;
+	@include fluid-font-size($caption-min, $caption-max, $primary-leading);
+}
 iframe {
 	max-width: 100%;
 }
 embed {
 	max-width: 100%;
 	height: auto;
+}
+ul,
+ol {
+	padding-left: 24px;
 }
 .alignnone {
 }
