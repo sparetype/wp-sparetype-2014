@@ -9,16 +9,9 @@
 		background: url(images/sparetype_logo.svg) 0 0 no-repeat;
 		width: 200px;
 	}
-	.loop-content {
-		margin: 184px 72px 18px;
-	}
 	#footer {
 		padding: 36px 72px;
 	}
-}
-
-@media screen and (min-width: 700px) {
-
 }
 
 @media screen and (min-width: 850px) {
@@ -32,16 +25,6 @@
 .loop-content {
 	column-count: 2;
 	max-width: 960px;
-}
-
-.page-content,
-.search-content,
-.project-content {
-  max-width: 700px;
-}
-
-.single-content {
-  max-width: 800px;
 }
 
 }

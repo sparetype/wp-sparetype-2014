@@ -48,7 +48,6 @@ body {
 }
 
 .loop-content {
-	margin: 184px 36px 18px;
 	column-count: 1;
 	column-gap: 72px;
 }
@@ -79,9 +78,10 @@ body {
 }
 
 .loop-content section {
-	padding:36px;
+	padding: 36px;
 }
 
+.loop-content,
 .page-content,
 .search-content,
 .project-content,
@@ -91,6 +91,7 @@ body {
 	@include fluid-spacing(right,8,72);
 	background-color: $brand-color4;
 	border: none;
+	max-width: 800px;
 }
 
 .single-content article {
