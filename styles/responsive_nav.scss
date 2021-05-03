@@ -180,10 +180,11 @@ header.site-navigation {
   border-top: 1px solid white;
   color: white;
   float: left;
-  padding: 0.7rem 72px;
+  padding: 0.7rem 0;
+  @include fluid-padding(right,8,72);
   text-decoration: none;
   width: 100%;
-	text-align: right;
+  text-align: right;
 }
 
 .nav-collapse a {
@@ -205,7 +206,7 @@ header.site-navigation {
   border: 0 none;
   float: left;
   margin: 0;
-  padding: 36px 2rem 27px;
+  padding: 36px 2.25vw 27px;
   text-align: center;
 }
 }
@@ -215,9 +216,8 @@ header.site-navigation {
   border: 0 none;
   float: left;
   margin: 0;
-  padding: 36px 1.17rem 27px;
   text-align: center;
-	  font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 }
 
@@ -248,7 +248,8 @@ header.site-navigation {
   height: 55px;
   float: right;
   font-size: 1.75rem;
-  margin: 27px 72px 27px 0;
+  margin: 24px 0;
+  @include fluid-spacing(right,8,72);
 }
 
 .nav-toggle:before {
@@ -269,5 +270,7 @@ header.site-navigation {
   content: "\78\0000a0MENU"; /* Close icon */
 }
 
-.nav-toggle:hover { color: $brand-color3; border:none;
+.nav-toggle:hover {
+	color: $brand-color3;
+	border:none;
 }

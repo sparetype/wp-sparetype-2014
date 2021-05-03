@@ -34,3 +34,19 @@
 		margin-#{$mx-direction}: $mx-maxSpacing + px;
 	}
 }
+
+
+// Font size and line height mixin for pixels and rems
+@mixin fluid-padding($mx-direction: top, $mx-minSpacing: 16, $mx-maxSpacing: 72) {
+
+	padding-#{$mx-direction}: $mx-minSpacing + px;
+
+	@media screen and (min-width: $viewport-min + px) {
+		padding-#{$mx-direction}: calc( #{$mx-minSpacing}px + (#{$mx-maxSpacing} - #{$mx-minSpacing}) * ( (100vw - #{$viewport-min}px) / ( #{$viewport-max} - #{$viewport-min}) ));
+		min-height: 0vw;
+	}
+
+	@media screen and (min-width: $viewport-max + px) {
+		padding-#{$mx-direction}: $mx-maxSpacing + px;
+	}
+}
